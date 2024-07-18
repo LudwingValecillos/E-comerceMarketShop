@@ -26,8 +26,52 @@
         </nav> 
     </header>
 
-    <main class="h-screen">
-        
+    <main class="  border-red-400 border-4 mx-auto bg-gray-300 bg-opacity-70 w-full max-w-4xl min-w-[500px] h-max">
+        <h2 class="text-center p-5 text-4xl">CONTACT FORM</h2>
+
+        <section class="bg-gray-300 bg-opacity-70 min-h-[80vh] flex flex-col justify-center items-center w-full max-w-4xl min-w-[500px]">
+            <form action="" class="py-5 max-w-lg w-full shadow-2xl mt-5">
+                <fieldset class="fieldset min-w-[90%]  p-[0px_20px_20px_20px] rounded-md m-5 border-2 border-black">
+                    <legend class="px-1.5 py-0 text-black text-xl font-bold">Datos Personales</legend>
+                    <label for="name">First-Name</label>
+                    <input class="flex justify-center w-full m-1.5" type="text" name="name" id="name" required>
+
+                    <label for="lastname">Last-Name</label>
+                    <input class="flex justify-center w-full m-1.5" type="text" name="lastname" id="lastname" required>
+
+                    <label for="streetaddress">Street-Address</label>
+                    <input class="flex justify-center w-full m-1.5" type="text" name="streetaddress" id="streetaddress" required>
+
+                <div  class="flex justify-center flex-grow w-full p-2.5 gap-1">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" required>
+
+                    <label for="zipcode">Zipcode</label>
+                    <input type="text" name="zipcode" id="zipcode" required>
+                </div>
+
+
+                <div class="flex gap-4 my-5 w-full p-2">
+                    <label for="male" >Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" required >
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="otro">Otro</label>
+                    <input type="radio" id="otro" name="gender" value="otro" required>
+                </div>
+                </fieldset>
+            <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Register</button>
+
+            </form>
+
+        </section>
+
+        <h2 class="text-2xl font-semibold text-gray-800 text-center m-10">Mapas</h2>
+        <div class="flex justify-center items-center flex-wrap gap-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243216152228!2d-58.40377032494396!3d-34.59801085719561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0xafb5fe117a2c5a52!2sParaguay%202334%2C%20C1121ABL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721344681628!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </main>
 
     <footer class="bg-[#F7F7F7]  flex justify-between h-40 mt-auto">
@@ -43,6 +87,6 @@
             <img src="./imagenes/logoYoutube.png" alt="" class="w-10 h-10">
         </div>
     </footer>
-    
+    <script src="../script/contac.js"></script>
 </body>
 </html>
