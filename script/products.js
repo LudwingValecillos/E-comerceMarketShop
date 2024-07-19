@@ -29,68 +29,7 @@ createOptions(productos)
 
 
 
-//--------CREANDO EL EVENTO DEL SELECT ===> TIPO DE PRODUCTO.(NO PRESTARLE ATENCION)
 
-// let precioMaximo = document.querySelector(".precio-maximo")
-
-// precioMaximo.addEventListener("input", event => {
-
-//     event.preventDefault();
-
-//     let productosPrecioMaximo = productos.filter(productos => productos.precio <= precioMaximo.value);
-
-//     console.log(productosPrecioMaximo);
-// })
-
-
-
-
-
-//--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
-
-select.addEventListener("input", event => {
-
-    event.preventDefault();
-
-console.log(select.value);
-
-    let preductoTipo = productos.filter(producto => producto.tipo_producto === select.value);
-    console.log(preductoTipo);
-})
-
-
-
-//--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
-
-
-let buscadorProducto = document.getElementById("buscador-producto");
-
-buscadorProducto.addEventListener("input",(event) =>{
-
-    let buscadorProductoValor = buscadorProducto.value.toLowerCase();
-
-    event.preventDefault();
-    if(buscadorProductoValor === ""){
-
-
-        return;
-    }
-
-
-
-    let productosFiltrados = productos.filter((producto) =>{
-
-        return producto.producto_nombre.toLowerCase().includes(buscadorProductoValor) ;  
-    }); 
-
-    console.log(productosFiltrados);
-
-    if (productosFiltrados.length === 0) {
-        console.log("Producto no encontrado");
-    } else {
-        console.log(productosFiltrados);
-    }
-});
 
 
 
@@ -142,6 +81,86 @@ function addCards(productos) {
 
 
 addCards(productos);
+
+
+
+
+
+
+
+
+//--------CREANDO EL EVENTO DEL SELECT =>  OPTIONS
+
+select.addEventListener("input", (event) => {
+
+    event.preventDefault();
+
+    let selectedValue = select.value;
+    console.log(selectedValue);
+
+    if (selectedValue === "all" || selectedValue === "") {
+        addCards(productos);
+        return;
+    }
+
+
+
+    let productoTipo = productos.filter((producto) => {
+
+        return producto.tipo_producto === selectedValue;
+    });
+    
+
+
+
+
+
+    addCards(productoTipo);
+
+})
+
+
+
+
+//--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
+
+let buscadorProducto = document.getElementById("input-buscador-nombre");
+console.log(buscadorProducto);
+buscadorProducto.addEventListener("input",(event) =>{
+
+    let buscadorProductoValor = buscadorProducto.value.toLowerCase();
+
+    console.log(buscadorProductoValor);
+
+    event.preventDefault();
+    if(buscadorProductoValor === ""){
+
+
+        return;
+    }
+
+
+
+    let productosFiltrados = productos.filter((producto) =>{
+
+        return producto.producto_nombre.toLowerCase().includes(buscadorProductoValor) ;  
+    }); 
+
+    console.log(productosFiltrados);
+
+    if (productosFiltrados.length === 0) {
+        cardContainer.innerHTML = "Producto no encontrado";
+    } else {
+        console.log(productosFiltrados);
+    }
+
+    addCards(productosFiltrados)
+});
+
+
+
+
+
 
 
 

@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../styles.css/styles.css">
+
     <link rel="shortcut icon" href="../imagenes/icon2.png" type="image/x-icon" />
     <title>Market Shop</title>
+
 </head>
+
 <body>
+    <div class="contenedor-total">
     <header class="bg-[#F7F7F7] flex flex-row flex-wrap justify-between items-center p-4 lg:px-[80px]">
         <div class="w-[30%] md:w-[25%] lg:w-[20%] mb-4 md:mb-0 flex-shrink-0">
-          <img src="../imagenes/favicon.gif" class="w-[300px]" alt="logo movieStack" />
+            <img src="../imagenes/favicon.gif" class="w-[300px]" alt="logo movieStack" />
         </div>
         <div class="flex flex-row justify-center items-center mb-4 md:mb-0 w-[70%] md:w-[75%] lg:w-[40%]">
-          <img src="../imagenes/carrito.gif" class="w-[30px] md:w-[50px] mr-2 flex-shrink-0" alt="carrito" />
-          <input type="text" inputmode="search" placeholder="Buscar producto"
-            class="w-full border-2 h-10 rounded-3xl border-gray-600 text-black text-center bg-red-300 placeholder-gray-500 focus:outline-none focus:border-red-500 transition-all duration-300" />
+            <img src="../imagenes/carrito.gif" class="w-[30px] md:w-[50px] mr-2 flex-shrink-0" alt="carrito" />
+            <input type="text" inputmode="search" placeholder="Buscar producto"
+                class="w-full border-2 h-10 rounded-3xl border-gray-600 text-black text-center bg-red-300 placeholder-gray-500 focus:outline-none focus:border-red-500 transition-all duration-300" />
         </div>
         <nav class="flex flex-row justify-center items-center gap-4 w-full lg:w-[20%]">
-            <a href="../index.html" class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
-             
-              <a href="./products.html"class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
-              
-              <a href="#"class="bg-red-800 text-white p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
-          </nav>
-      </header>
+            <a href="../index.html"
+                class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
+
+            <a href="./products.html"
+                class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
+
+            <a href="#"
+                class="bg-red-800 text-white p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
+        </nav>
+    </header>
 
     <main class="  border-red-400 border-4 mx-auto my-8 bg-gray-300 bg-opacity-70 w-full max-w-4xl min-w-[500px] shadow-2xl ">
-        <h2 class="text-center p-5 text-4xl">Contactanos </h2>
+        <h1 class="text-center p-5 text-4xl">Contactanos </h1>
 
-        <section class="bg-[#E43A2C] bg-opacity-70  min-h-[80vh] flex flex-col justify-center items-center w-full max-w-4xl min-w-[40px]">
+        <div
+            class="bg-[#E43A2C] bg-opacity-70  min-h-[80vh] flex flex-col justify-center items-center w-full max-w-4xl min-w-[40px]">
             <form action="" class=" max-w-lg w-full  shadow-2xl ">
                 <fieldset class="fieldset min-w-[90%] p-[0px_20px_20px_20px] rounded-md  border-2 border-black">
-
                     <legend class="px-1.5 py-0 text-black text-xl font-bold">Datos Personales</legend>
                     <label for="name">First-Name</label>
                     <input class="flex justify-center w-full m-1.5" type="text" name="name" id="name" required>
@@ -42,53 +50,59 @@
                     <input class="flex justify-center w-full m-1.5" type="text" name="lastname" id="lastname" required>
 
                     <label for="streetaddress">Street-Address</label>
-                    <input class="flex justify-center w-full m-1.5" type="text" name="streetaddress" id="streetaddress" required>
+                    <input class="flex justify-center w-full m-1.5" type="text" name="streetaddress" id="streetaddress"
+                        required>
 
-                <div  class="flex justify-center flex-grow w-full p-2.5 gap-1">
-                    <label for="city">City</label>
-                    <input type="text" name="city" id="city" required>
+                    <div class="flex justify-center flex-grow w-full p-2.5 gap-1">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" required>
 
-                    <label for="zipcode">Zipcode</label>
-                    <input type="text" name="zipcode" id="zipcode" required>
-                </div>
+                        <label for="zipcode">Zipcode</label>
+                        <input type="text" name="zipcode" id="zipcode" required>
+                    </div>
 
 
-                <div class="flex gap-4 my-5 w-full p-2">
-                    <label for="male" >Gender:</label>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="gender" value="male" required >
-                    <label for="female">Female</label>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="otro">Otro</label>
-                    <input type="radio" id="otro" name="gender" value="otro" required>
-                </div>
+                    <div class="flex gap-4 my-5 w-full p-2">
+                        <label for="male">Gender:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="otro">Otro</label>
+                        <input type="radio" id="otro" name="gender" value="otro" required>
+                    </div>
                 </fieldset>
-            <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Register</button>
+                <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Register</button>
 
             </form>
 
-        </section>
+        </div>
 
-        <h2 class="text-2xl font-semibold text-gray-800 text-center bg-[#ffffff75] py-4">¿DONDE ENCONTRARNOS?</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 text-center bg-[#ffffff75] py-4">Â¿DONDE ENCONTRARNOS?</h2>
         <div class="flex justify-center items-center flex-wrap gap-5">
-            <iframe class="w-full " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243216152228!2d-58.40377032494396!3d-34.59801085719561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0xafb5fe117a2c5a52!2sParaguay%202334%2C%20C1121ABL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721344681628!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="w-full "
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243216152228!2d-58.40377032494396!3d-34.59801085719561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0xafb5fe117a2c5a52!2sParaguay%202334%2C%20C1121ABL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721344681628!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </main>
 
     <footer class="bg-[#F7F7F7]  flex justify-between h-40 mt-auto">
-        
+
         <div class="  flex gap-2 sm:gap-6 md:gap-10 w-full items-center justify-center md:justify-start h-full">
             <p>&copy; 2024 Supermercado. Todos los derechos reservados.</p>
         </div>
         <div class="  flex m-2 w-96 flex-wrap justify-evenly">
             <img src="../imagenes/favicon.gif" class="w-full h-auto" alt="logo movieStack" />
-            <a href="https://www.facebook.com"><img src="../imagenes/logoFacebook.png" alt="" class="w-10 h-10" /></a>    
-        <a href="https://www.instagram.com"><img src="../imagenes/logoInstagram.png" alt="" class="w-10 h-10" /></a>
-        <a href="https://www.linkedin.com"><img src="../imagenes/logoLinkeDin.png" alt="" class="w-10 h-10" /></a>
-        <a href="https://www.youtube.com"><img src="../imagenes/logoYoutube.png" alt="" class="w-10 h-10" /></a>
+            <a href="https://www.facebook.com"><img src="../imagenes/logoFacebook.png" alt="" class="w-10 h-10" /></a>
+            <a href="https://www.instagram.com"><img src="../imagenes/logoInstagram.png" alt="" class="w-10 h-10" /></a>
+            <a href="https://www.linkedin.com"><img src="../imagenes/logoLinkeDin.png" alt="" class="w-10 h-10" /></a>
+            <a href="https://www.youtube.com"><img src="../imagenes/logoYoutube.png" alt="" class="w-10 h-10" /></a>
         </div>
     </footer>
+    </div>
     <script src="../script/contac.js"></script>
 </body>
+
 </html>
