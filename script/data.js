@@ -4,7 +4,7 @@ const productos = [
         "id": 1,
         "producto_nombre": "Manzana",
         "descripcion": "Manzanas rojas frescas",
-        "precio": 150  ,
+        "precio": 2299  ,
         "imagen_url": "../imagenes/manzana.png",
         "tipo_producto": "Fruta",
         "stock": 10
@@ -12,8 +12,8 @@ const productos = [
     {
         "id": 2,
         "producto_nombre": "Pan",
-        "descripcion": "Pan integral de 500g",
-        "precio": 120 ,
+        "descripcion": "Pan casero por kg",
+        "precio": 1500 ,
         "imagen_url": "../imagenes/pan.jpg",
         "tipo_producto": "Panadería",
         "stock": 5 
@@ -22,7 +22,7 @@ const productos = [
         "id": 3,
         "producto_nombre": "Leche",
         "descripcion": "Leche entera de 1 litro",
-        "precio": 90 ,
+        "precio": 1300 ,
         "imagen_url": "../imagenes/leche.png",
         "tipo_producto": "Lácteos",
         "stock": 9
@@ -31,7 +31,7 @@ const productos = [
         "id": 4,
         "producto_nombre": "Arroz",
         "descripcion": "Arroz blanco de 1 kg",
-        "precio": 100,
+        "precio": 2300,
         "imagen_url": "../imagenes/arroz.jpg",
         "tipo_producto": "Cereales",
         "stock": 8
@@ -39,8 +39,8 @@ const productos = [
     {
         "id": 5,
         "producto_nombre": "Pollo",
-        "descripcion": "Pechuga de pollo 500g",
-        "precio": 350,
+        "descripcion": "Pollo por kilo",
+        "precio": 2800,
         "imagen_url": "../imagenes/pollo.jpg",
         "tipo_producto": "Carnes",
         "stock": 3
@@ -49,7 +49,7 @@ const productos = [
         "id": 6,
         "producto_nombre": "Jugo de Naranja",
         "descripcion": "Jugo de naranja natural 1L",
-        "precio": 200,
+        "precio": 1690,
         "imagen_url": "../imagenes/jugo.jpg",
         "tipo_producto": "Bebidas",
         "stock": 6
@@ -57,8 +57,8 @@ const productos = [
     {
         "id": 7,
         "producto_nombre": "Yogur",
-        "descripcion": "Yogur natural 200g",
-        "precio": 80,
+        "descripcion": "Yogur por litro",
+        "precio": 1750,
         "imagen_url": "../imagenes/yogur.jpg",
         "tipo_producto": "Lácteos",
         "stock": 7
@@ -66,8 +66,8 @@ const productos = [
     {
         "id": 8,
         "producto_nombre": "Queso",
-        "descripcion": "Queso cheddar 250g",
-        "precio": 250,
+        "descripcion": "Queso cremoso 250g",
+        "precio": 3100,
         "imagen_url": "../imagenes/queso.jpg",
         "tipo_producto": "Lácteos",
         "stock": 2
@@ -76,7 +76,7 @@ const productos = [
         "id": 9,
         "producto_nombre": "Huevos",
         "descripcion": "Docena de huevos frescos",
-        "precio": 180,
+        "precio":2400,
         "imagen_url": "../imagenes/huevos.jpg",
         "tipo_producto": "Huevos",
         "stock": 11
@@ -84,8 +84,8 @@ const productos = [
     {
         "id": 10,
         "producto_nombre": "Cereal",
-        "descripcion": "Cereal de avena 500g",
-        "precio": 230,
+        "descripcion": "Cereal copos de maiz y arroz crocante",
+        "precio": 2350,
         "imagen_url": "../imagenes/cereal.jpg",
         "tipo_producto": "Cereales",
         "stock": 4
@@ -94,7 +94,7 @@ const productos = [
         "id": 11,
         "producto_nombre": "Tomate",
         "descripcion": "Tomates frescos",
-        "precio": 160,
+        "precio": 800,
         "imagen_url": "../imagenes/tomate.jpg",
         "tipo_producto": "Verdura",
         "stock": 12
@@ -102,8 +102,8 @@ const productos = [
     {
         "id": 12,
         "producto_nombre": "Pastas",
-        "descripcion": "Pastas capeletinis",
-        "precio": 150,
+        "descripcion": "Pastas Giacomo capelletini",
+        "precio": 3900,
         "imagen_url": "../imagenes/pastas.jpg",
         "tipo_producto": "Cereales",
         "stock": 10
@@ -112,7 +112,7 @@ const productos = [
         "id": 13,
         "producto_nombre": "Zanahoria",
         "descripcion": "Zanahorias frescas 1kg",
-        "precio": 140,
+        "precio": 1200,
         "imagen_url": "../imagenes/zanahoria.jpg",
         "tipo_producto": "Verdura",
         "stock": 13
@@ -121,7 +121,7 @@ const productos = [
         "id": 14,
         "producto_nombre": "Aceite de Oliva",
         "descripcion": "Aceite de oliva virgen extra 500ml",
-        "precio": 500,
+        "precio": 5500,
         "imagen_url": "../imagenes/aceite.jpg",
         "tipo_producto": "Aceite",
         "stock": 14
@@ -129,8 +129,8 @@ const productos = [
     {
         "id": 15,
         "producto_nombre": "Cafe",
-        "descripcion": "Cafe molido 250g",
-        "precio": 300,
+        "descripcion": "Cafe torrado equilibrado 1 kg",
+        "precio": 4500,
         "imagen_url": "../imagenes/cafe.jpg",
         "tipo_producto": "Bebidas",
         "stock": 15
@@ -139,7 +139,7 @@ const productos = [
         "id": 16,
         "producto_nombre": "Azucar",
         "descripcion": "Azucar blanca 1kg",
-        "precio": 100,
+        "precio": 1700,
         "imagen_url": "../imagenes/azucar.jpg",
         "tipo_producto": "Condimentos",
         "stock": 16
@@ -147,8 +147,8 @@ const productos = [
     {
         "id": 17,
         "producto_nombre": "Sal",
-        "descripcion": "Sal de mesa 1kg",
-        "precio": 70,
+        "descripcion": "Sal de mesa 500 gr",
+        "precio": 1200,
         "imagen_url": "../imagenes/sal.jpg",
         "tipo_producto": "Condimentos",
         "stock": 7
@@ -157,7 +157,7 @@ const productos = [
         "id": 18,
         "producto_nombre": "Atun",
         "descripcion": "Atun enlatado 200g",
-        "precio": 150,
+        "precio": 2300,
         "imagen_url": "../imagenes/atun.jpg",
         "tipo_producto": "Pescado",
         "stock": 8
@@ -166,7 +166,7 @@ const productos = [
         "id": 19,
         "producto_nombre": "Manteca",
         "descripcion": "Mantequilla sin sal 250g",
-        "precio": 250,
+        "precio": 3100,
         "imagen_url": "../imagenes/manteca.jpg",
         "tipo_producto": "Lácteos",
         "stock": 9
@@ -175,7 +175,7 @@ const productos = [
         "id": 20,
         "producto_nombre": "Helado",
         "descripcion": "Helado balde de 3 colores por kilo",
-        "precio": 400,
+        "precio": 6400,
         "imagen_url": "../imagenes/helado.jpg",
         "tipo_producto": "Postres",
         "stock": 10
@@ -184,7 +184,7 @@ const productos = [
         "id": 21,
         "producto_nombre": "Banana",
         "descripcion": "Bananas frescas",
-        "precio": 120,
+        "precio": 2000,
         "imagen_url": "../imagenes/banana.jpg",
         "tipo_producto": "Fruta",
         "stock": 11
@@ -193,7 +193,7 @@ const productos = [
         "id": 22,
         "producto_nombre": "Naranja",
         "descripcion": "Naranjas frescas",
-        "precio": 110,
+        "precio": 1700,
         "imagen_url": "../imagenes/naranja.jpg",
         "tipo_producto": "Fruta",
         "stock": 12
@@ -202,7 +202,7 @@ const productos = [
         "id": 23,
         "producto_nombre": "Pera",
         "descripcion": "Peras frescas",
-        "precio": 130,
+        "precio": 1800,
         "imagen_url": "../imagenes/pera.jpg",
         "tipo_producto": "Fruta",
         "stock": 13
@@ -211,7 +211,7 @@ const productos = [
         "id": 24,
         "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 500g",
-        "precio": 180,
+        "precio": 5100,
         "imagen_url": "../imagenes/frutilla.jpg",
         "tipo_producto": "Fruta",
         "stock": 14
@@ -219,8 +219,8 @@ const productos = [
     {
         "id": 25,
         "producto_nombre": "Sandia",
-        "descripcion": "Sandia fresca",
-        "precio": 250,
+        "descripcion": "Sandia fresca por kg",
+        "precio": 1050,
         "imagen_url": "../imagenes/sandia.jpg",
         "tipo_producto": "Fruta",
         "stock": 15
