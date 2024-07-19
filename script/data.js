@@ -9,7 +9,7 @@ const productos=[
     {
         "id": 2,
         "producto": "Pan",
-        "descripcion": "Pan integral de 500g",
+        "descripcion": "Pan de mesa de 500g",
         "precio": 1.20,
         "imagen_url": "https://example.com/images/pan.jpg"
     },
@@ -30,7 +30,7 @@ const productos=[
     {
         "id": 5,
         "producto": "Pollo",
-        "descripcion": "Pechuga de pollo 500g",
+        "descripcion": "Pollo entero por kg",
         "precio": 3.50,
         "imagen_url": "https://example.com/images/pollo.jpg"
     },
@@ -44,14 +44,14 @@ const productos=[
     {
         "id": 7,
         "producto": "Yogur",
-        "descripcion": "Yogur natural 200g",
+        "descripcion": "Yogur por litro",
         "precio": 0.80,
         "imagen_url": "https://example.com/images/yogur.jpg"
     },
     {
         "id": 8,
         "producto": "Queso",
-        "descripcion": "Queso cheddar 250g",
+        "descripcion": "Queso cremoso sin TACC 250g",
         "precio": 2.50,
         "imagen_url": "https://example.com/images/queso.jpg"
     },
@@ -65,21 +65,21 @@ const productos=[
     {
         "id": 10,
         "producto": "Cereal",
-        "descripcion": "Cereal de avena 500g",
+        "descripcion": "Copos de maiz, arroz crocante y trigo inflado",
         "precio": 2.30,
         "imagen_url": "https://example.com/images/cereal.jpg"
     },
     {
         "id": 11,
         "producto": "Tomate",
-        "descripcion": "Tomates frescos",
+        "descripcion": "Tomates frescos por kilo",
         "precio": 0.60,
         "imagen_url": "https://example.com/images/tomate.jpg"
     },
     {
         "id": 12,
         "producto": "Pasta",
-        "descripcion": "Pasta de trigo 500g",
+        "descripcion": "Giacomo capelletini 500g",
         "precio": 1.50,
         "imagen_url": "https://example.com/images/pasta.jpg"
     },
@@ -100,7 +100,7 @@ const productos=[
     {
         "id": 15,
         "producto": "Café",
-        "descripcion": "Café molido 250g",
+        "descripcion": "Café torrado molido 1 kg",
         "precio": 3.00,
         "imagen_url": "https://example.com/images/cafe.jpg"
     },
@@ -121,21 +121,21 @@ const productos=[
     {
         "id": 18,
         "producto": "Atún",
-        "descripcion": "Atún enlatado 200g",
+        "descripcion": "Atún enlatado 170g",
         "precio": 1.50,
         "imagen_url": "https://example.com/images/atun.jpg"
     },
     {
         "id": 19,
-        "producto": "Mantequilla",
-        "descripcion": "Mantequilla sin sal 250g",
+        "producto": "Manteca",
+        "descripcion": "Manteca 100 g",
         "precio": 2.50,
         "imagen_url": "https://example.com/images/mantequilla.jpg"
     },
     {
         "id": 20,
         "producto": "Helado",
-        "descripcion": "Helado de vainilla 500ml",
+        "descripcion": "Helado de 3 sabores por kilo",
         "precio": 4.00,
         "imagen_url": "https://example.com/images/helado.jpg"
     }
