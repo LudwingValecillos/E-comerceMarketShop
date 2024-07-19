@@ -203,7 +203,7 @@ const productos = [
         "producto_nombre": "Pera",
         "descripcion": "Peras frescas",
         "precio": 130,
-        "imagen_url": "../imagenes/pera.jpg",
+        "imagen_url": "../imagenes/pera.png",
         "tipo_producto": "Fruta",
         "stock": 13
     },
@@ -212,7 +212,7 @@ const productos = [
         "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 500g",
         "precio": 180,
-        "imagen_url": "../imagenes/frutilla.jpg",
+        "imagen_url": "../imagenes/frutillas.png",
         "tipo_producto": "Fruta",
         "stock": 14
     },
