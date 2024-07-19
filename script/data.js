@@ -203,12 +203,20 @@ const productos = [
         "producto_nombre": "Pera",
         "descripcion": "Peras frescas",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "precio": 1800,
         "imagen_url": "../imagenes/pera.jpg",
 =======
         "precio": 130,
         "imagen_url": "../imagenes/pera.png",
 >>>>>>> eae29c94ee2928748f4a1ec47905c03e10c861cb
+=======
+
+
+        "precio": 130,
+        "imagen_url": "../imagenes/pera.png",
+
+>>>>>>> d8a9cb9b6254f31d58e79e1159be62ea86276d72
         "tipo_producto": "Fruta",
         "stock": 13
     },
@@ -217,12 +225,19 @@ const productos = [
         "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 500g",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "precio": 5100,
         "imagen_url": "../imagenes/frutilla.jpg",
 =======
         "precio": 180,
         "imagen_url": "../imagenes/frutillas.png",
 >>>>>>> eae29c94ee2928748f4a1ec47905c03e10c861cb
+=======
+
+        "precio": 180,
+        "imagen_url": "../imagenes/frutillas.png",
+
+>>>>>>> d8a9cb9b6254f31d58e79e1159be62ea86276d72
         "tipo_producto": "Fruta",
         "stock": 14
     },
