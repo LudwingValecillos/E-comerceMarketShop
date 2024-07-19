@@ -91,84 +91,73 @@ addCards(productos);
 
 //--------CREANDO EL EVENTO DEL SELECT =>  OPTIONS
 
-select.addEventListener("input", (event) => {
+// select.addEventListener("input", (event) => {
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    let selectedValue = select.value;
-    console.log(selectedValue);
+//     let selectedValue = select.value;
+//     console.log(selectedValue);
 
-    if (selectedValue === "all" || selectedValue === "") {
-        addCards(productos);
-        return;
-    }
+//     if (selectedValue === "all" || selectedValue === "") {
+//         addCards(productos);
+//         return;
+//     }
 
 
 
-    let productoTipo = productos.filter((producto) => {
+//     let productoTipo = productos.filter((producto) => {
 
-        return producto.tipo_producto === selectedValue;
-    });
+//         return producto.tipo_producto === selectedValue;
+//     });
     
 
 
+//     addCards(productoTipo);
 
-
-
-    addCards(productoTipo);
-
-})
-
-
-
-
-//--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
-
-let buscadorProducto = document.getElementById("input-buscador-nombre");
-console.log(buscadorProducto);
-buscadorProducto.addEventListener("input",(event) =>{
-
-    let buscadorProductoValor = buscadorProducto.value.toLowerCase();
-
-    console.log(buscadorProductoValor);
-
-    event.preventDefault();
-    if(buscadorProductoValor === ""){
-
-
-        return;
-    }
-
-
-
-    let productosFiltrados = productos.filter((producto) =>{
-
-        return producto.producto_nombre.toLowerCase().includes(buscadorProductoValor) ;  
-    }); 
-
-    console.log(productosFiltrados);
-
-    if (productosFiltrados.length === 0) {
-        cardContainer.innerHTML = "Producto no encontrado";
-    } else {
-        console.log(productosFiltrados);
-    }
-});
+// })
 
 
 
 
-// <article class="articulo w-52">
-//             <img src="../imagenes/manzana.png" class="imagenArticulo w-full h-40" alt="">
-//             <h2 class="tituloArticulo text-center font-bold text-2xl">Manzana</h2>
-//             <p class="descripcionArticulo text-center">Manzanas rojas frescas</p>
-//             <div class="flex justify-evenly">
-//                 <p class="precioArticulo font-bold text-center">0.50</p>
-//                 <p class="stockArticulo font-bold text-center">Disponible</p>
-//             </div>
+// //--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
 
-//                 <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Carrito</button>
+// let buscadorProducto = document.getElementById("input-buscador-nombre");
+// console.log(buscadorProducto);
 
-//         </article>
+// buscadorProducto.addEventListener("input",(event) =>{
+
+//     let buscadorProductoValor = buscadorProducto.value.toLowerCase();
+
+//     console.log(buscadorProductoValor);
+
+//     event.preventDefault();
+//     if(buscadorProductoValor === ""){
+//         return addCards(productos);
+//     }else{
+        
+//     }
 
 
+
+//     let productosFiltrados = productos.filter((producto) =>{
+
+//         return producto.producto_nombre.toLowerCase().includes(buscadorProductoValor) ;  
+//     }); 
+
+//     console.log(productosFiltrados);
+
+//     if (productosFiltrados.length === 0) {
+//         cardContainer.innerHTML = "Producto no encontrado";
+//     } else {
+//         console.log(productosFiltrados);
+//     }
+// });
+
+
+
+
+
+// let buscadorProducto = document.getElementById("input-buscador-nombre");
+
+// select.addEventListener("input", (event) => {
+// buscadorProducto.addEventListener("input",(event) =>{
