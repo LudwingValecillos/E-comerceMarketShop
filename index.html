@@ -1,75 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
-<header class="bg-[#F7F7F7] flex justify-between h-40 ">
+  </head>
+  <body>
+    <header class="bg-[#F7F7F7] flex justify-between h-40">
+      <div
+        class="flex gap-2 sm:gap-6 md:gap-10 w-1/2 items-center justify-center md:justify-start h-30"
+      >
+        <img
+          src="https://cdn.dribbble.com/users/46315/screenshots/2080616/open-uri20150527-11-j5oul2"
+          class="h-full object-cover"
+          alt="logo movieStack"
+        />
+      </div>
 
-        <div class="  flex gap-2 sm:gap-6 md:gap-10 w-1/2 items-center justify-center md:justify-start h-30">
-          <img src="https://cdn.dribbble.com/users/46315/screenshots/2080616/open-uri20150527-11-j5oul2"  class=" h-full object-cover" alt="logo movieStack">
-        </div>
+      <div
+        class="flex gap-2 sm:gap-6 md:gap-10 w-full items-center justify-center md:justify-start h-full"
+      >
+        <img src="./imagenes/carrito.gif" class="w-16 object-cover" alt="" />
 
-        <div class="  flex gap-2 sm:gap-6 md:gap-10 w-full items-center justify-center md:justify-start h-full "> 
-            <img src="./imagenes/carrito.gif" class="w-16 object-cover " alt="">
-
-            <input type="text" name="" id="" unputmode="search" placeholder="Buscar producto " class="w-3/4 border-2 h-10 rounded-3xl border-gray-600 text-black  text-center bg-red-300 " >
-        
-        </div>
-        <nav class="flex   justify-center items-center p-3 gap-10  ">
-            <a href="#" class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
-            <a href="./pages/contac.html" class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
-            <a href="./pages/products.html" class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
-        </nav> 
+        <input
+          type="text"
+          name=""
+          id=""
+          unputmode="search"
+          placeholder="Buscar producto "
+          class="w-3/4 border-2 h-10 rounded-3xl border-gray-600 text-black text-center bg-red-300"
+        />
+      </div>
+      <nav class="flex justify-center items-center p-3 gap-10">
+        <a
+          href="#"
+          class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300"
+          >Home</a
+        >
+        <a
+          href="./pages/contac.html"
+          class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300"
+          >Contact</a
+        >
+        <a
+          href="./pages/products.html"
+          class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300"
+          >Productos</a
+        >
+      </nav>
     </header>
 
     <main class="h-screen">
-        <div class="relative bg-gray-900 h-64">
-            <!-- Fondo del banner -->
-            <img class="absolute inset-0 object-cover w-full h-full opacity-50" src="url_de_la_imagen" alt="Imagen de fondo del banner">
-        
-            <!-- Contenido superpuesto -->
-            <div class="relative flex items-center justify-center h-full">
-                <div class="text-center text-white">
-                    <h1 class="text-4xl font-bold mb-4"></h1>
-                    <p class="text-lg mb-6"></p>
+      <div class="relative bg-gray-900 h-72">
     
-                </div>
-            </div>
-        </div>
+        <img
+          class="absolute inset-0 object-cover w-full h-full"
+          src="./imagenes/banner.jpg"
+          alt="Imagen de fondo del banner"
+        />
 
-
-            <h1 class="text-center text-3xl font-bold mt-10 scale-x-105">Bienvenido a Market: Tu Supermercado de Confianza</h1>
-            <div class=" m-20">
-                <p class="leading-6 p-2">
-                    Market es un supermercado con una sólida trayectoria y dedicado a satisfacer las necesidades de toda la familia. Con varios años en el rubro, nos destacamos por ofrecer una amplia variedad de productos frescos y de calidad, desde frutas y verduras hasta carnes y panadería fresca. Nuestro ambiente acogedor incluye áreas de juego para niños y un personal amable siempre dispuesto a ayudar.
-                </p>
-                <p class="leading-6 p-2">
-                    Nos enorgullece ofrecer un servicio al cliente excepcional, asegurando que cada visita sea una experiencia placentera y sin complicaciones. Innovamos constantemente con opciones de compra en línea y entregas a domicilio, adaptándonos para brindar la máxima comodidad a nuestros clientes. Además, nos comprometemos activamente con la comunidad, participando en eventos locales y apoyando iniciativas de caridad.
-                </p>
-                <p class="leading-6 p-2">
-                    En Market, no solo encontrarás un lugar para hacer tus compras diarias, sino también un espacio donde sentirte parte de una comunidad cercana y comprometida. Te invitamos a descubrir por qué somos el supermercado preferido para tantas familias, ofreciendo calidad, servicio y una experiencia única en cada visita.
-                </p>
+        <div class="relative flex items-center justify-center h-full">
+          <div class="text-center text-white">
+            <h1 class="text-6xl font-bold mb-4">¡Bienvenido a Market!</h1>
+            <p class="text-xl leading mb-6">Tu Supermercado de Confianza</p>
+          </div>
         </div>
+      </div>
+      <div class=" mx-auto max-w-7xl px-4 sm-24 mt-10 ">
+        <p class="leading-6 p-2 text-lg font-semibold font-sans">
+          Market es un supermercado con una sólida trayectoria y dedicado a
+          satisfacer las necesidades de toda la familia. Con varios años en el
+          rubro, nos destacamos por ofrecer una amplia variedad de productos
+          frescos y de calidad, desde frutas y verduras hasta carnes y panadería
+          fresca. Nuestro ambiente acogedor incluye áreas de juego para niños y
+          un personal amable siempre dispuesto a ayudar.
+        </p>
+        <p class="leading-6 p-2 text-lg font-semibold font-sans">
+          Nos enorgullece ofrecer un servicio al cliente excepcional, asegurando
+          que cada visita sea una experiencia placentera y sin complicaciones.
+          Innovamos constantemente con opciones de compra en línea y entregas a
+          domicilio, adaptándonos para brindar la máxima comodidad a nuestros
+          clientes. Además, nos comprometemos activamente con la comunidad,
+          participando en eventos locales y apoyando iniciativas de caridad.
+        </p>
+        <p class="leading-6 p-2 text-lg font-semibold font-sans">
+          En Market, no solo encontrarás un lugar para hacer tus compras
+          diarias, sino también un espacio donde sentirte parte de una comunidad
+          cercana y comprometida. Te invitamos a descubrir por qué somos el
+          supermercado preferido para tantas familias, ofreciendo calidad,
+          servicio y una experiencia única en cada visita.
+        </p>
+        <p class="leading-6 p-2 text-lg font-semibold font-sans">
+          Tenemos un compromiso con la Sostenibilidad. Estamos comprometidos con
+          prácticas sostenibles y responsables. Nos esforzamos por reducir
+          nuestro impacto ambiental mediante la implementación de iniciativas de
+          reciclaje, reducción de residuos y promoción de productos locales y
+          orgánicos. Creemos en cuidar nuestro entorno y ofrecer opciones que
+          sean respetuosas con el medio ambiente, asegurando un futuro más verde
+          para las generaciones venideras.
+        </p>
+        <p class="leading-6 p-2 text-lg font-semibold font-sans">
+          Nuestro compromiso con la innovación nos impulsa a estar siempre a la
+          vanguardia del sector. No solo buscamos mejorar constantemente
+          nuestros servicios y productos, sino también escuchar activamente los
+          comentarios de nuestros clientes para adaptarnos a sus necesidades
+          cambiantes. Desde la incorporación de nuevas tecnologías hasta la
+          expansión de nuestras líneas de productos, estamos dedicados a ofrecer
+          una experiencia de compra excepcional que se distinga por su
+          conveniencia, calidad y atención al detalle.
+        </p>
+      </div>
     </main>
 
-
-   <footer class="bg-[#F7F7F7]  flex justify-between h-40 mt-auto">
-        
-        <div class="  flex gap-2 sm:gap-6 md:gap-10 w-full items-center justify-center md:justify-start h-full">
-            <p>&copy; 2024 Supermercado. Todos los derechos reservados.</p>
-        </div>
-        <div class="  flex m-2 w-96 flex-wrap justify-evenly">
-            <img src="./imagenes/favicon.gif"  class="w-full h-auto " alt="logo movieStack">
-            <img src="./imagenes/logoFacebook.png" alt="" class="w-10 h-10">
-            <img src="./imagenes/logoInstagram.png" alt="" class="w-10 h-10">
-            <img src="./imagenes/logoLinkeDin.png" alt="" class="w-10 h-10">
-            <img src="./imagenes/logoYoutube.png" alt="" class="w-10 h-10">
-        </div>
+    <footer class="bg-[#F7F7F7] flex justify-between h-40 mt-auto">
+      <div
+        class="flex gap-2 sm:gap-6 md:gap-10 w-full items-center justify-center md:justify-start h-full"
+      >
+        <p>&copy; 2024 Supermercado. Todos los derechos reservados.</p>
+      </div>
+      <div class="flex m-2 w-96 flex-wrap justify-evenly">
+        <img
+          src="./imagenes/favicon.gif"
+          class="w-full h-auto"
+          alt="logo movieStack"
+        />
+        <img src="./imagenes/logoFacebook.png" alt="" class="w-10 h-10" />
+        <img src="./imagenes/logoInstagram.png" alt="" class="w-10 h-10" />
+        <img src="./imagenes/logoLinkeDin.png" alt="" class="w-10 h-10" />
+        <img src="./imagenes/logoYoutube.png" alt="" class="w-10 h-10" />
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
