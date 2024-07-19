@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-[#F7F7F7] flex justify-between h-40 ">
-
-        <div class="  flex gap-2 sm:gap-6 md:gap-10 w-1/2 items-center justify-center md:justify-start h-30">
-            <img src="https://cdn.dribbble.com/users/46315/screenshots/2080616/open-uri20150527-11-j5oul2"  class=" h-full object-cover" alt="logo movieStack">
+    <header class="bg-[#F7F7F7] flex flex-row flex-wrap justify-between items-center p-4 lg:px-[80px]">
+        <div class="w-[30%] md:w-[25%] lg:w-[20%] mb-4 md:mb-0 flex-shrink-0">
+          <img src="../imagenes/favicon.gif" class="w-[300px]" alt="logo movieStack" />
         </div>
-
-        <div class="  flex gap-2 sm:gap-6 md:gap-10 w-full items-center justify-center md:justify-start h-full "> 
-            <img src="../imagenes/carrito.gif" class="w-16 object-cover " alt="">
-
-        
+        <div class="flex flex-row justify-center items-center mb-4 md:mb-0 w-[70%] md:w-[75%] lg:w-[40%]">
+          <img src="../imagenes/carrito.gif" class="w-[30px] md:w-[50px] mr-2 flex-shrink-0" alt="carrito" />
+          <input type="text" inputmode="search" placeholder="Buscar producto"
+            class="w-full border-2 h-10 rounded-3xl border-gray-600 text-black text-center bg-red-300 placeholder-gray-500 focus:outline-none focus:border-red-500 transition-all duration-300" />
         </div>
-        <nav class="flex   justify-center items-center p-3 gap-10  ">
-            <a href="../index.html" class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
-            <a href="./products.html" class="bg-red-300 p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
-            <a href="#" class="bg-red-800 text-white p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
+        <nav class="flex flex-row justify-center items-center gap-4 w-full lg:w-[20%]">
+            <a href="../index.html" class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
+             
+              <a href="./products.html"class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
+              
+              <a href="#"class="bg-red-800 text-white p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
+          </nav>
+      </header>
 
-        </nav> 
-    </header>
+    <main class="  border-red-400 border-4 mx-auto my-8 bg-gray-300 bg-opacity-70 w-full max-w-4xl min-w-[500px] shadow-2xl ">
+        <h2 class="text-center p-5 text-4xl">Contactanos </h2>
 
-    <main class="  border-red-400 border-4 mx-auto bg-gray-300 bg-opacity-70 w-full max-w-4xl min-w-[500px] h-max">
-        <h2 class="text-center p-5 text-4xl">CONTACT FORM</h2>
-
-        <section class="bg-[#E43A2C] bg-opacity-70 min-h-[80vh] flex flex-col justify-center items-center w-full max-w-4xl min-w-[500px]">
-            <form action="" class="py-5 max-w-lg w-full shadow-2xl mt-5">
-                <fieldset class="fieldset min-w-[90%]  p-[0px_20px_20px_20px] rounded-md m-5 border-2 border-black">
+        <section class="bg-[#E43A2C] bg-opacity-70  min-h-[80vh] flex flex-col justify-center items-center w-full max-w-4xl min-w-[40px]">
+            <form action="" class=" max-w-lg w-full  shadow-2xl ">
+                <fieldset class="fieldset min-w-[90%] p-[0px_20px_20px_20px] rounded-md  border-2 border-black">
                     <legend class="px-1.5 py-0 text-black text-xl font-bold">Datos Personales</legend>
                     <label for="name">First-Name</label>
                     <input class="flex justify-center w-full m-1.5" type="text" name="name" id="name" required>
@@ -67,7 +67,7 @@
 
         </section>
 
-        <h2 class="text-2xl font-semibold text-gray-800 text-center py-4">Ubicacion</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 text-center bg-[#ffffff75] py-4">¿DONDE ENCONTRARNOS?</h2>
         <div class="flex justify-center items-center flex-wrap gap-5">
             <iframe class="w-full " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243216152228!2d-58.40377032494396!3d-34.59801085719561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0xafb5fe117a2c5a52!2sParaguay%202334%2C%20C1121ABL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721344681628!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -80,9 +80,7 @@
             <p>&copy; 2024 Supermercado. Todos los derechos reservados.</p>
         </div>
         <div class="  flex m-2 w-96 flex-wrap justify-evenly">
-
             <img src="../imagenes/favicon.gif" class="w-full h-auto" alt="logo movieStack" />
-
             <a href="https://www.facebook.com"><img src="../imagenes/logoFacebook.png" alt="" class="w-10 h-10" /></a>    
         <a href="https://www.instagram.com"><img src="../imagenes/logoInstagram.png" alt="" class="w-10 h-10" /></a>
         <a href="https://www.linkedin.com"><img src="../imagenes/logoLinkeDin.png" alt="" class="w-10 h-10" /></a>
