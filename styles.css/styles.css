@@ -1,4 +1,7 @@
-.contenedor-todo{
-    display: flex;
-    flex-direction: column;
+body{
+ background-image: url(../imagenes/supermercado.jpg);   
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
 }
