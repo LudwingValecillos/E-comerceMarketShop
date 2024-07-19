@@ -1,142 +1,202 @@
-const productos=[
+const productos = [
     {
         "id": 1,
-        "producto": "Manzana",
+        "producto_nombre": "Manzana",
         "descripcion": "Manzanas rojas frescas",
-        "precio": 0.50,
-        "imagen_url": "https://example.com/images/manzana.jpg"
+        "precio": 150,
+        "imagen_url": "./imagenes/manzana.png",
+        "tipo_producto": "Fruta"
     },
     {
         "id": 2,
-        "producto": "Pan",
-        "descripcion": "Pan de mesa de 500g",
-        "precio": 1.20,
-        "imagen_url": "https://example.com/images/pan.jpg"
+        "producto_nombre": "Pan",
+        "descripcion": "Pan integral de 500g",
+        "precio": 120,
+        "imagen_url": "./imagenes/pan.jpg",
+        "tipo_producto": "Panaderia"
     },
     {
         "id": 3,
-        "producto": "Leche",
+        "producto_nombre": "Leche",
         "descripcion": "Leche entera de 1 litro",
-        "precio": 0.90,
-        "imagen_url": "https://example.com/images/leche.jpg"
+        "precio": 90,
+        "imagen_url": "./imagenes/leche.png",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 4,
-        "producto": "Arroz",
+        "producto_nombre": "Arroz",
         "descripcion": "Arroz blanco de 1 kg",
-        "precio": 1.00,
-        "imagen_url": "https://example.com/images/arroz.jpg"
+        "precio": 100,
+        "imagen_url": "./imagenes/arroz.jpg",
+        "tipo_producto": "Cereales"
     },
     {
         "id": 5,
-        "producto": "Pollo",
-        "descripcion": "Pollo entero por kg",
-        "precio": 3.50,
-        "imagen_url": "https://example.com/images/pollo.jpg"
+        "producto_nombre": "Pollo",
+        "descripcion": "Pechuga de pollo 500g",
+        "precio": 350,
+        "imagen_url": "./imagenes/pollo.jpg",
+        "tipo_producto": "Carnes"
     },
     {
         "id": 6,
-        "producto": "Jugo de Naranja",
+        "producto_nombre": "Jugo de Naranja",
         "descripcion": "Jugo de naranja natural 1L",
-        "precio": 2.00,
-        "imagen_url": "https://example.com/images/jugo.jpg"
+        "precio": 200,
+        "imagen_url": "./imagenes/jugo_naranja.jpg",
+        "tipo_producto": "Bebidas"
     },
     {
         "id": 7,
-        "producto": "Yogur",
-        "descripcion": "Yogur por litro",
-        "precio": 0.80,
-        "imagen_url": "https://example.com/images/yogur.jpg"
+        "producto_nombre": "Yogur",
+        "descripcion": "Yogur natural 200g",
+        "precio": 80,
+        "imagen_url": "./imagenes/yogur.jpg",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 8,
-        "producto": "Queso",
-        "descripcion": "Queso cremoso sin TACC 250g",
-        "precio": 2.50,
-        "imagen_url": "https://example.com/images/queso.jpg"
+        "producto_nombre": "Queso",
+        "descripcion": "Queso cheddar 250g",
+        "precio": 250,
+        "imagen_url": "./imagenes/queso_cremoso.jpg",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 9,
-        "producto": "Huevos",
+        "producto_nombre": "Huevos",
         "descripcion": "Docena de huevos frescos",
-        "precio": 1.80,
-        "imagen_url": "https://example.com/images/huevos.jpg"
+        "precio": 180,
+        "imagen_url": "./imagenes/huevos.jpg",
+        "tipo_producto": "Huevos"
     },
     {
         "id": 10,
-        "producto": "Cereal",
-        "descripcion": "Copos de maiz, arroz crocante y trigo inflado",
-        "precio": 2.30,
-        "imagen_url": "https://example.com/images/cereal.jpg"
+        "producto_nombre": "Cereal",
+        "descripcion": "Cereal de avena 500g",
+        "precio": 230,
+        "imagen_url": "./imagenes/cereal_mix.jpg",
+        "tipo_producto": "Cereales"
     },
     {
         "id": 11,
-        "producto": "Tomate",
-        "descripcion": "Tomates frescos por kilo",
-        "precio": 0.60,
-        "imagen_url": "https://example.com/images/tomate.jpg"
+        "producto_nombre": "Tomate",
+        "descripcion": "Tomates frescos",
+        "precio": 160,
+        "imagen_url": "./imagenes/tomate.jpg",
+        "tipo_producto": "Verdura"
     },
     {
         "id": 12,
-        "producto": "Pasta",
-        "descripcion": "Giacomo capelletini 500g",
-        "precio": 1.50,
-        "imagen_url": "https://example.com/images/pasta.jpg"
+        "producto_nombre": "Pasta",
+        "descripcion": "Pasta de trigo 500g",
+        "precio": 150,
+        "imagen_url": "./imagenes/pastas.jpg",
+        "tipo_producto": "Cereales"
     },
     {
         "id": 13,
-        "producto": "Zanahoria",
+        "producto_nombre": "Zanahoria",
         "descripcion": "Zanahorias frescas 1kg",
-        "precio": 1.20,
-        "imagen_url": "https://example.com/images/zanahoria.jpg"
+        "precio": 140,
+        "imagen_url": "./imagenes/zanahoria.jpg",
+        "tipo_producto": "Verdura"
     },
     {
         "id": 14,
-        "producto": "Aceite de Oliva",
+        "producto_nombre": "Aceite de Oliva",
         "descripcion": "Aceite de oliva virgen extra 500ml",
-        "precio": 5.00,
-        "imagen_url": "https://example.com/images/aceite.jpg"
+        "precio": 500,
+        "imagen_url": "./imagenes/aceite_oliva.jpg",
+        "tipo_producto": "Aceite"
     },
     {
         "id": 15,
-        "producto": "Café",
-        "descripcion": "Café torrado molido 1 kg",
-        "precio": 3.00,
-        "imagen_url": "https://example.com/images/cafe.jpg"
+        "producto_nombre": "Cafe",
+        "descripcion": "Cafe molido 250g",
+        "precio": 300,
+        "imagen_url": "./imagenes/cafe.jpg",
+        "tipo_producto": "Bebidas"
     },
     {
         "id": 16,
-        "producto": "Azúcar",
-        "descripcion": "Azúcar blanca 1kg",
-        "precio": 1.00,
-        "imagen_url": "https://example.com/images/azucar.jpg"
+        "producto_nombre": "Azucar",
+        "descripcion": "Azucar blanca 1kg",
+        "precio": 100,
+        "imagen_url": "./imagenes/azucar.jpg",
+        "tipo_producto": "Condimentos"
     },
     {
         "id": 17,
-        "producto": "Sal",
+        "producto_nombre": "Sal",
         "descripcion": "Sal de mesa 1kg",
-        "precio": 0.70,
-        "imagen_url": "https://example.com/images/sal.jpg"
+        "precio": 70,
+        "imagen_url": "./imagenes/sal.jpg",
+        "tipo_producto": "Condimentos"
     },
     {
         "id": 18,
-        "producto": "Atún",
-        "descripcion": "Atún enlatado 170g",
-        "precio": 1.50,
-        "imagen_url": "https://example.com/images/atun.jpg"
+        "producto_nombre": "Atun",
+        "descripcion": "Atun enlatado 200g",
+        "precio": 150,
+        "imagen_url": "./imagenes/atun.jpg",
+        "tipo_producto": "Pescado"
     },
     {
         "id": 19,
-        "producto": "Manteca",
-        "descripcion": "Manteca 100 g",
-        "precio": 2.50,
-        "imagen_url": "https://example.com/images/mantequilla.jpg"
+        "producto_nombre": "Mantequilla",
+        "descripcion": "Mantequilla sin sal 250g",
+        "precio": 250,
+        "imagen_url": "./imagenes/manteca.jpg",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 20,
-        "producto": "Helado",
-        "descripcion": "Helado de 3 sabores por kilo",
-        "precio": 4.00,
-        "imagen_url": "https://example.com/images/helado.jpg"
+        "producto_nombre": "Helado",
+        "descripcion": "Helado de vainilla 500ml",
+        "precio": 400,
+        "imagen_url": "./imagenes/helado.jpg",
+        "tipo_producto": "Postres"
+    },
+    {
+        "id": 21,
+        "producto_nombre": "Banana",
+        "descripcion": "Bananas frescas",
+        "precio": 120,
+        "imagen_url": "./imagenes/bananas.jpg",
+        "tipo_producto": "Fruta"
+    },
+    {
+        "id": 22,
+        "producto_nombre": "Naranja",
+        "descripcion": "Naranjas frescas",
+        "precio": 110,
+        "imagen_url": "./imagenes/naranja.jpg",
+        "tipo_producto": "Fruta"
+    },
+    {
+        "id": 23,
+        "producto_nombre": "Pera",
+        "descripcion": "Peras frescas",
+        "precio": 130,
+        "imagen_url": "./imagenes/pera.jpg",
+        "tipo_producto": "Fruta"
+    },
+    {
+        "id": 24,
+        "producto_nombre": "Frutilla",
+        "descripcion": "Frutillas frescas 500g",
+        "precio": 180,
+        "imagen_url": "./imagenes/frutilla.jpg",
+        "tipo_producto": "Fruta"
+    },
+    {
+        "id": 25,
+        "producto_nombre": "Sandia",
+        "descripcion": "Sandia fresca",
+        "precio": 250,
+        "imagen_url": "./imagenes/sandia.jpg",
+        "tipo_producto": "Fruta"
     }
-]
+];
