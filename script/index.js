@@ -1,17 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
+let input = document.getElementById("inputSearch");
 
-    document.getElementById('next').addEventListener('click', () => {
-      items[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % totalItems;
-      items[currentIndex].classList.add('active');
-    });
+input.addEventListener("keydown", (event) => {
+    if (event.key === 'Enter' || event.keyCode === 13) {
 
-    document.getElementById('prev').addEventListener('click', () => {
-      items[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-      items[currentIndex].classList.add('active');
-    });
-  });
+        console.log(input.value);
+        window.localStorage.setItem("search", input.value);
+        window.location.href = "pages/products.html";
+
+    }
+})
+console.log(input);
