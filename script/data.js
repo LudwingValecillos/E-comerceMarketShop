@@ -1,10 +1,9 @@
-
 const productos = [
     {
         "id": 1,
         "producto_nombre": "Manzana",
         "descripcion": "Manzanas rojas frescas",
-        "precio": 2299  ,
+        "precio": 2299,
         "imagen_url": "../imagenes/manzana.png",
         "tipo_producto": "Fruta",
         "stock": 10
@@ -13,7 +12,7 @@ const productos = [
         "id": 2,
         "producto_nombre": "Pan",
         "descripcion": "Pan casero por kg",
-        "precio": 1500 ,
+        "precio": 1500,
         "imagen_url": "../imagenes/pan.jpg",
         "tipo_producto": "Panadería",
         "stock": 5 
@@ -22,7 +21,7 @@ const productos = [
         "id": 3,
         "producto_nombre": "Leche",
         "descripcion": "Leche entera de 1 litro",
-        "precio": 1300 ,
+        "precio": 1300,
         "imagen_url": "../imagenes/leche.png",
         "tipo_producto": "Lácteos",
         "stock": 9
@@ -76,7 +75,7 @@ const productos = [
         "id": 9,
         "producto_nombre": "Huevos",
         "descripcion": "Docena de huevos frescos",
-        "precio":2400,
+        "precio": 2400,
         "imagen_url": "../imagenes/huevos.jpg",
         "tipo_producto": "Huevos",
         "stock": 11
@@ -202,21 +201,8 @@ const productos = [
         "id": 23,
         "producto_nombre": "Pera",
         "descripcion": "Peras frescas",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "precio": 1800,
-        "imagen_url": "../imagenes/pera.jpg",
-=======
-        "precio": 130,
         "imagen_url": "../imagenes/pera.png",
->>>>>>> eae29c94ee2928748f4a1ec47905c03e10c861cb
-=======
-
-
-        "precio": 130,
-        "imagen_url": "../imagenes/pera.png",
-
->>>>>>> d8a9cb9b6254f31d58e79e1159be62ea86276d72
         "tipo_producto": "Fruta",
         "stock": 13
     },
@@ -224,20 +210,8 @@ const productos = [
         "id": 24,
         "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 500g",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "precio": 5100,
-        "imagen_url": "../imagenes/frutilla.jpg",
-=======
-        "precio": 180,
         "imagen_url": "../imagenes/frutillas.png",
->>>>>>> eae29c94ee2928748f4a1ec47905c03e10c861cb
-=======
-
-        "precio": 180,
-        "imagen_url": "../imagenes/frutillas.png",
-
->>>>>>> d8a9cb9b6254f31d58e79e1159be62ea86276d72
         "tipo_producto": "Fruta",
         "stock": 14
     },
