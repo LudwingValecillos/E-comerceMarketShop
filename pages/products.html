@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
     <header class="bg-[#F7F7F7] flex justify-between h-40 ">
 
         <div class="  flex gap-2 sm:gap-6 md:gap-10 w-1/2 items-center justify-center md:justify-start h-30">
@@ -26,18 +26,25 @@
         </nav> 
     </header>
 
-    <main class="h-screen">
-        <div id="container-div" class="border-orange-900 border-4 h-screen  ">
+    <main class="">
+        <div id="container-div" class="border-orange-900 border-4 h-full  ">
             <div  class="flex justify-center gap-10">
 
-                <select name="producto" class="select-producto">
+                <select name="producto" class="select-producto border-2 border-black ">
 
-                    <option value="all">Elige el producto</option>
+                    <option value="all">Elige por categoria</option>
                 </select>
-                <input type="number" class="precio-maximo  border-4 border-black text-center" placeholder="ingrese el monto " >
+                <!-- <input type="number" class="precio-maximo  border-2 border-black text-center" placeholder="ingrese el monto " > -->
     
             </div>
+
+            
+            <div class="card-container flex justify-evenly flex-wrap gap-12 mt-10">
+
+
+            </div>
                     </div>
+
         
     </main>
 
