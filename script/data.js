@@ -5,7 +5,7 @@ const productos = [
         "producto_nombre": "Manzana",
         "descripcion": "Manzanas rojas frescas",
         "precio": 150,
-        "imagen_url": "./imagenes/manzana.jpg",
+        "imagen_url": "./imagenes/manzana.png",
         "tipo_producto": "Fruta",
         "stock": 10
     },
@@ -23,7 +23,7 @@ const productos = [
         "producto_nombre": "Leche",
         "descripcion": "Leche entera de 1 litro",
         "precio": 90,
-        "imagen_url": "./imagenes/leche.jpg",
+        "imagen_url": "./imagenes/leche.png",
         "tipo_producto": "Lácteos",
         "stock": 9
     },
@@ -101,10 +101,10 @@ const productos = [
     },
     {
         "id": 12,
-        "producto_nombre": "Pasta",
-        "descripcion": "Pasta de trigo 500g",
+        "producto_nombre": "Pastas",
+        "descripcion": "Pastas capeletinis",
         "precio": 150,
-        "imagen_url": "./imagenes/pasta.jpg",
+        "imagen_url": "./imagenes/pastas.jpg",
         "tipo_producto": "Cereales",
         "stock": 10
     },
@@ -164,10 +164,10 @@ const productos = [
     },
     {
         "id": 19,
-        "producto_nombre": "Mantequilla",
+        "producto_nombre": "Manteca",
         "descripcion": "Mantequilla sin sal 250g",
         "precio": 250,
-        "imagen_url": "./imagenes/mantequilla.jpg",
+        "imagen_url": "./imagenes/manteca.jpg",
         "tipo_producto": "Lácteos",
         "stock": 9
     },
