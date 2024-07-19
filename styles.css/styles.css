@@ -6,7 +6,8 @@ body{
  background-position: center;
 }
 
-
-#active{
-    background-color: blue;
+.contenedor-total{
+    display: flex;
+    flex-direction: column;
 }
+
