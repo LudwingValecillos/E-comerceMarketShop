@@ -202,8 +202,13 @@ const productos = [
         "id": 23,
         "producto_nombre": "Pera",
         "descripcion": "Peras frescas",
+<<<<<<< HEAD
         "precio": 1800,
         "imagen_url": "../imagenes/pera.jpg",
+=======
+        "precio": 130,
+        "imagen_url": "../imagenes/pera.png",
+>>>>>>> eae29c94ee2928748f4a1ec47905c03e10c861cb
         "tipo_producto": "Fruta",
         "stock": 13
     },
@@ -211,8 +216,13 @@ const productos = [
         "id": 24,
         "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 500g",
+<<<<<<< HEAD
         "precio": 5100,
         "imagen_url": "../imagenes/frutilla.jpg",
+=======
+        "precio": 180,
+        "imagen_url": "../imagenes/frutillas.png",
+>>>>>>> eae29c94ee2928748f4a1ec47905c03e10c861cb
         "tipo_producto": "Fruta",
         "stock": 14
     },
