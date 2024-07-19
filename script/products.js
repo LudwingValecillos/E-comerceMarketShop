@@ -29,45 +29,108 @@ createOptions(productos)
 
 
 
-//--------CREANDO EL EVENTO DEL SELECT ===> TIPO DE PRODUCTO.
 
-let precioMaximo = document.querySelector(".precio-maximo")
 
-precioMaximo.addEventListener("input", event => {
+
+
+
+//------------CREANDO LA ESTRUCTURA DE LA CARTA--------------//
+
+
+let cardContainer = document.querySelector(".card-container");
+console.log(cardContainer);
+
+
+function createCards(arrayProductos){
+
+
+    let card = `
+
+    <article class="w-72 h-full border-black border-2 flex flex-col justify-between bg-red-200 rounded-lg p-5">
+            <img src="${arrayProductos.imagen_url}" class="imagenArticulo w-full h-40 objet-contain rounded-lg" alt="${arrayProductos.producto_nombre}">
+            <h2 class="tituloArticulo text-center font-bold text-2xl">${arrayProductos.producto_nombre}</h2>
+            <p class="descripcionArticulo text-center ">${arrayProductos.descripcion}</p>
+            <div class="flex justify-evenly">
+                <p class="precioArticulo font-bold text-center">${arrayProductos.precio} $</p>
+                <p class="stockArticulo font-bold text-center">${arrayProductos.stock} unidades</p>
+            </div>
+
+                <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Agregar al carrito</button>
+    </article>
+
+
+
+
+`    
+        return card
+
+}
+
+
+
+function addCards(productos) {
+    
+    cardContainer.innerHTML = '';
+    let respuesta = "";
+    console.log(productos);
+    productos.forEach(item => {
+        respuesta += createCards(item);
+    });
+    cardContainer.innerHTML += respuesta;
+}
+
+
+addCards(productos);
+
+
+
+
+
+
+
+
+//--------CREANDO EL EVENTO DEL SELECT =>  OPTIONS
+
+select.addEventListener("input", (event) => {
 
     event.preventDefault();
 
-    let productosPrecioMaximo = productos.filter(productos => productos.precio <= precioMaximo.value);
+    let selectedValue = select.value;
+    console.log(selectedValue);
 
-    console.log(productosPrecioMaximo);
+    if (selectedValue === "all" || selectedValue === "") {
+        addCards(productos);
+        return;
+    }
+
+
+
+    let productoTipo = productos.filter((producto) => {
+
+        return producto.tipo_producto === selectedValue;
+    });
+    
+
+
+
+
+
+    addCards(productoTipo);
+
 })
 
-
-
-
-
-//--------CREANDO EL EVENTO DEL INPUT TYPE => NUMBER
-
-select.addEventListener("input", event => {
-
-    event.preventDefault();
-
-console.log(select.value);
-
-    let preductoTipo = productos.filter(producto => producto.tipo_producto === select.value);
-    console.log(preductoTipo);
-})
 
 
 
 //--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
 
-
-let buscadorProducto = document.getElementById("buscador-producto");
-
+let buscadorProducto = document.getElementById("input-buscador-nombre");
+console.log(buscadorProducto);
 buscadorProducto.addEventListener("input",(event) =>{
 
     let buscadorProductoValor = buscadorProducto.value.toLowerCase();
+
+    console.log(buscadorProductoValor);
 
     event.preventDefault();
     if(buscadorProductoValor === ""){
@@ -86,7 +149,7 @@ buscadorProducto.addEventListener("input",(event) =>{
     console.log(productosFiltrados);
 
     if (productosFiltrados.length === 0) {
-        console.log("Producto no encontrado");
+        cardContainer.innerHTML = "Producto no encontrado";
     } else {
         console.log(productosFiltrados);
     }
@@ -107,3 +170,5 @@ buscadorProducto.addEventListener("input",(event) =>{
 //                 <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Carrito</button>
 
 //         </article>
+
+

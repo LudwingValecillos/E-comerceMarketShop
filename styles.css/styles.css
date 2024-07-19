@@ -6,8 +6,36 @@ body{
  background-position: center;
 }
 
-.contenedor-total{
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel-container {
     display: flex;
-    flex-direction: column;
-}
-
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    scroll-behavior: smooth;
+  }
+  .carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 100%; /* Full width on small screens */
+    margin-right: 1rem; /* Espacio entre tarjetas */
+  }
+  .carousel::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
+  }
+  @media (min-width: 640px) {
+    .carousel-item {
+      width: 50%; /* Ancho de tarjeta en pantallas medianas (tablets) */
+    }
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      width: 33.333%; /* Ancho de tarjeta en pantallas grandes (desktops) */
+    }
+  }
+  .contenedor-total{
+    display: flex;
+    flex-direction: column;}

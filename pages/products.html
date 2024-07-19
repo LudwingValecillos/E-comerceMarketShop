@@ -5,47 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="../imagenes/icon2.png" type="image/x-icon" />
+    <title>Market Shop</title>
 </head>
 
 <body>
     <div class="contenedor-todo">
         <header class="bg-[#F7F7F7] flex flex-row flex-wrap justify-between items-center p-4 lg:px-[80px]">
             <div class="w-[30%] md:w-[25%] lg:w-[20%] mb-4 md:mb-0 flex-shrink-0">
-                <img src="../imagenes/logo2.webp" class="w-[250px]" alt="logo movieStack" />
+              <img src="../imagenes/logo2.webp" class="w-[250px]" alt="logo movieStack" />
             </div>
-
+    
             <div>
-                <h1 class="font-bold text-6xl">Super Market</h1>
+              <h1 class="font-bold text-6xl">Super Market</h1>
             </div>
-
+    
             <nav class="flex flex-row justify-center items-center gap-4 w-full lg:w-[20%]">
-                <a href="../index.html"
-                    class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
-
-                <a href="#"
-                    class="bg-red-800 text-white p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
-
-                <a href="./contac.html"
-                    class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
+              <a href="#"
+                class="bg-red-800 text-white p-4 rounded-3xl text-xl hover:bg-red-800 hover:text-white transition-all duration-300">Home</a>
+      
+                <a href="./pages/products.html"
+                class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Productos</a>
+      
+                <a href="./pages/contac.html"
+                class="bg-red-300 p-[20px] text-center rounded-3xl text-lg md:text-xl py-2 hover:bg-red-800 hover:text-white transition-all duration-300">Contact</a>
             </nav>
-        </header>
+          </header>
 
-        <main class="h-screen">
-            <div id="container-div" class="border-orange-900 border-4">
-                <div class="flex justify-center gap-10">
+    <main class="">
+        <div id="container-div" class="border-orange-900 border-4 h-full  ">
 
-                    <select name="producto" class="select-producto">
+            <div  class="flex justify-center gap-10">
 
-                        <option value="all">Elige el producto</option>
-                    </select>
-                    <input type="number" class="precio-maximo  border-4 border-black text-center"
-                        placeholder="ingrese el monto ">
+                <select name="producto"  class="select-producto border-2 border-black ">
 
-                </div>
+                    <option value="all">Elige por categoria</option>
+                </select>
+                <!-- <input type="number" class="precio-maximo  border-2 border-black text-center" placeholder="ingrese el monto " > -->
+    
+            </div>
+            <div class="flex flex-row justify-center items-center mb-4 md:mb-0 w-[70%] md:w-[75%] lg:w-[40%]">
+                <img src="../imagenes/carrito.gif" class="w-[30px] md:w-[50px] mr-2 flex-shrink-0" alt="carrito" />
+                <input type="text" inputmode="search" placeholder="Buscar producto " id="input-buscador-nombre"
+                  class="w-full border-2 h-10 rounded-3xl border-gray-600 text-black text-center bg-red-300 placeholder-gray-500 focus:outline-none focus:border-red-500 transition-all duration-300" />
+              </div>
+            
+            <div class="card-container flex justify-evenly flex-wrap gap-12 mt-10">
+
+
             </div>
 
-        </main>
+                    </div>
+
+        
+    </main>
 
         <footer class="bg-[#F7F7F7] flex flex-col md:flex-row justify-between items-center md:px-[80px]">
             <p class="text-[18px]">
