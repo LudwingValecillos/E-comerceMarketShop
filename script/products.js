@@ -29,24 +29,24 @@ createOptions(productos)
 
 
 
-//--------CREANDO EL EVENTO DEL SELECT ===> TIPO DE PRODUCTO.
+//--------CREANDO EL EVENTO DEL SELECT ===> TIPO DE PRODUCTO.(NO PRESTARLE ATENCION)
 
-let precioMaximo = document.querySelector(".precio-maximo")
+// let precioMaximo = document.querySelector(".precio-maximo")
 
-precioMaximo.addEventListener("input", event => {
+// precioMaximo.addEventListener("input", event => {
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    let productosPrecioMaximo = productos.filter(productos => productos.precio <= precioMaximo.value);
+//     let productosPrecioMaximo = productos.filter(productos => productos.precio <= precioMaximo.value);
 
-    console.log(productosPrecioMaximo);
-})
-
-
+//     console.log(productosPrecioMaximo);
+// })
 
 
 
-//--------CREANDO EL EVENTO DEL INPUT TYPE => NUMBER
+
+
+//--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
 
 select.addEventListener("input", event => {
 
@@ -95,15 +95,61 @@ buscadorProducto.addEventListener("input",(event) =>{
 
 
 
-// <article class="articulo w-52">
-//             <img src="../imagenes/manzana.png" class="imagenArticulo w-full h-40" alt="">
-//             <h2 class="tituloArticulo text-center font-bold text-2xl">Manzana</h2>
-//             <p class="descripcionArticulo text-center">Manzanas rojas frescas</p>
-//             <div class="flex justify-evenly">
-//                 <p class="precioArticulo font-bold text-center">0.50</p>
-//                 <p class="stockArticulo font-bold text-center">Disponible</p>
-//             </div>
+//------------CREANDO LA ESTRUCTURA DE LA CARTA--------------//
 
-//                 <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Carrito</button>
 
-//         </article>
+let cardContainer = document.querySelector(".card-container");
+console.log(cardContainer);
+
+
+function createCards(arrayProductos){
+
+
+    let card = `
+
+    <article class="w-72 h-full border-black border-2 flex flex-col justify-between bg-red-200 rounded-lg p-5">
+            <img src="${arrayProductos.imagen_url}" class="imagenArticulo w-full h-40 objet-contain rounded-lg" alt="${arrayProductos.producto_nombre}">
+            <h2 class="tituloArticulo text-center font-bold text-2xl">${arrayProductos.producto_nombre}</h2>
+            <p class="descripcionArticulo text-center ">${arrayProductos.descripcion}</p>
+            <div class="flex justify-evenly">
+                <p class="precioArticulo font-bold text-center">${arrayProductos.precio} $</p>
+                <p class="stockArticulo font-bold text-center">${arrayProductos.stock} unidades</p>
+            </div>
+
+                <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Agregar al carrito</button>
+    </article>
+
+
+
+
+`    
+        return card
+
+}
+
+
+
+function addCards(productos) {
+    
+    cardContainer.innerHTML = '';
+    let respuesta = "";
+    console.log(productos);
+    productos.forEach(item => {
+        respuesta += createCards(item);
+    });
+    cardContainer.innerHTML += respuesta;
+}
+
+
+addCards(productos);
+
+
+
+
+
+//------------CREANDO LOS FILTROS CRUZADOS--------------//
+
+
+
+
+
