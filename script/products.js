@@ -63,34 +63,34 @@ console.log(select.value);
 //--------CREANDO EL EVENTO DEL INPUT TYPE => TEXT
 
 
-let buscadorProducto = document.getElementById("buscador-producto");
+// let buscadorProducto = document.getElementById("buscador-producto");
 
-buscadorProducto.addEventListener("input",(event) =>{
+// buscadorProducto.addEventListener("input",(event) =>{
 
-    let buscadorProductoValor = buscadorProducto.value.toLowerCase();
+//     let buscadorProductoValor = buscadorProducto.value.toLowerCase();
 
-    event.preventDefault();
-    if(buscadorProductoValor === ""){
-
-
-        return;
-    }
+//     event.preventDefault();
+//     if(buscadorProductoValor === ""){
 
 
+//         return;
+//     }
 
-    let productosFiltrados = productos.filter((producto) =>{
 
-        return producto.producto_nombre.toLowerCase().includes(buscadorProductoValor) ;  
-    }); 
 
-    console.log(productosFiltrados);
+//     let productosFiltrados = productos.filter((producto) =>{
 
-    if (productosFiltrados.length === 0) {
-        console.log("Producto no encontrado");
-    } else {
-        console.log(productosFiltrados);
-    }
-});
+//         return producto.producto_nombre.toLowerCase().includes(buscadorProductoValor) ;  
+//     }); 
+
+//     console.log(productosFiltrados);
+
+//     if (productosFiltrados.length === 0) {
+//         console.log("Producto no encontrado");
+//     } else {
+//         console.log(productosFiltrados);
+//     }
+// });
 
 
 
