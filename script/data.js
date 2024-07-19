@@ -1,202 +1,202 @@
-const productos=[
+const productos = [
     {
         "id": 1,
-        "producto": "Manzana",
+        "producto_nombre": "Manzana",
         "descripcion": "Manzanas rojas frescas",
         "precio": 150,
-        "imagen_url": "https://example.com/images/manzana.jpg",
+        "imagen_url": "./imagenes/manzana.png",
         "tipo_producto": "Fruta"
     },
     {
         "id": 2,
-        "producto": "Pan",
+        "producto_nombre": "Pan",
         "descripcion": "Pan integral de 500g",
         "precio": 120,
-        "imagen_url": "https://example.com/images/pan.jpg",
-        "tipo_producto": "Panadería"
+        "imagen_url": "./imagenes/pan.jpg",
+        "tipo_producto": "Panaderia"
     },
     {
         "id": 3,
-        "producto": "Leche",
+        "producto_nombre": "Leche",
         "descripcion": "Leche entera de 1 litro",
         "precio": 90,
-        "imagen_url": "https://example.com/images/leche.jpg",
-        "tipo_producto": "Lácteos"
+        "imagen_url": "./imagenes/leche.png",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 4,
-        "producto": "Arroz",
+        "producto_nombre": "Arroz",
         "descripcion": "Arroz blanco de 1 kg",
         "precio": 100,
-        "imagen_url": "https://example.com/images/arroz.jpg",
+        "imagen_url": "./imagenes/arroz.jpg",
         "tipo_producto": "Cereales"
     },
     {
         "id": 5,
-        "producto": "Pollo",
+        "producto_nombre": "Pollo",
         "descripcion": "Pechuga de pollo 500g",
         "precio": 350,
-        "imagen_url": "https://example.com/images/pollo.jpg",
+        "imagen_url": "./imagenes/pollo.jpg",
         "tipo_producto": "Carnes"
     },
     {
         "id": 6,
-        "producto": "Jugo de Naranja",
+        "producto_nombre": "Jugo de Naranja",
         "descripcion": "Jugo de naranja natural 1L",
         "precio": 200,
-        "imagen_url": "https://example.com/images/jugo.jpg",
+        "imagen_url": "./imagenes/jugo_naranja.jpg",
         "tipo_producto": "Bebidas"
     },
     {
         "id": 7,
-        "producto": "Yogur",
+        "producto_nombre": "Yogur",
         "descripcion": "Yogur natural 200g",
         "precio": 80,
-        "imagen_url": "https://example.com/images/yogur.jpg",
-        "tipo_producto": "Lácteos"
+        "imagen_url": "./imagenes/yogur.jpg",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 8,
-        "producto": "Queso",
+        "producto_nombre": "Queso",
         "descripcion": "Queso cheddar 250g",
         "precio": 250,
-        "imagen_url": "https://example.com/images/queso.jpg",
-        "tipo_producto": "Lácteos"
+        "imagen_url": "./imagenes/queso_cremoso.jpg",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 9,
-        "producto": "Huevos",
+        "producto_nombre": "Huevos",
         "descripcion": "Docena de huevos frescos",
         "precio": 180,
-        "imagen_url": "https://example.com/images/huevos.jpg",
+        "imagen_url": "./imagenes/huevos.jpg",
         "tipo_producto": "Huevos"
     },
     {
         "id": 10,
-        "producto": "Cereal",
+        "producto_nombre": "Cereal",
         "descripcion": "Cereal de avena 500g",
         "precio": 230,
-        "imagen_url": "https://example.com/images/cereal.jpg",
+        "imagen_url": "./imagenes/cereal_mix.jpg",
         "tipo_producto": "Cereales"
     },
     {
         "id": 11,
-        "producto": "Tomate",
+        "producto_nombre": "Tomate",
         "descripcion": "Tomates frescos",
         "precio": 160,
-        "imagen_url": "https://example.com/images/tomate.jpg",
+        "imagen_url": "./imagenes/tomate.jpg",
         "tipo_producto": "Verdura"
     },
     {
         "id": 12,
-        "producto": "Pasta",
+        "producto_nombre": "Pasta",
         "descripcion": "Pasta de trigo 500g",
         "precio": 150,
-        "imagen_url": "https://example.com/images/pasta.jpg",
+        "imagen_url": "./imagenes/pastas.jpg",
         "tipo_producto": "Cereales"
     },
     {
         "id": 13,
-        "producto": "Zanahoria",
+        "producto_nombre": "Zanahoria",
         "descripcion": "Zanahorias frescas 1kg",
         "precio": 140,
-        "imagen_url": "https://example.com/images/zanahoria.jpg",
+        "imagen_url": "./imagenes/zanahoria.jpg",
         "tipo_producto": "Verdura"
     },
     {
         "id": 14,
-        "producto": "Aceite de Oliva",
+        "producto_nombre": "Aceite de Oliva",
         "descripcion": "Aceite de oliva virgen extra 500ml",
         "precio": 500,
-        "imagen_url": "https://example.com/images/aceite.jpg",
+        "imagen_url": "./imagenes/aceite_oliva.jpg",
         "tipo_producto": "Aceite"
     },
     {
         "id": 15,
-        "producto": "Café",
-        "descripcion": "Café molido 250g",
+        "producto_nombre": "Cafe",
+        "descripcion": "Cafe molido 250g",
         "precio": 300,
-        "imagen_url": "https://example.com/images/cafe.jpg",
+        "imagen_url": "./imagenes/cafe.jpg",
         "tipo_producto": "Bebidas"
     },
     {
         "id": 16,
-        "producto": "Azúcar",
-        "descripcion": "Azúcar blanca 1kg",
+        "producto_nombre": "Azucar",
+        "descripcion": "Azucar blanca 1kg",
         "precio": 100,
-        "imagen_url": "https://example.com/images/azucar.jpg",
+        "imagen_url": "./imagenes/azucar.jpg",
         "tipo_producto": "Condimentos"
     },
     {
         "id": 17,
-        "producto": "Sal",
+        "producto_nombre": "Sal",
         "descripcion": "Sal de mesa 1kg",
         "precio": 70,
-        "imagen_url": "https://example.com/images/sal.jpg",
+        "imagen_url": "./imagenes/sal.jpg",
         "tipo_producto": "Condimentos"
     },
     {
         "id": 18,
-        "producto": "Atún",
-        "descripcion": "Atún enlatado 200g",
+        "producto_nombre": "Atun",
+        "descripcion": "Atun enlatado 200g",
         "precio": 150,
-        "imagen_url": "https://example.com/images/atun.jpg",
+        "imagen_url": "./imagenes/atun.jpg",
         "tipo_producto": "Pescado"
     },
     {
         "id": 19,
-        "producto": "Mantequilla",
+        "producto_nombre": "Mantequilla",
         "descripcion": "Mantequilla sin sal 250g",
         "precio": 250,
-        "imagen_url": "https://example.com/images/mantequilla.jpg",
-        "tipo_producto": "Lácteos"
+        "imagen_url": "./imagenes/manteca.jpg",
+        "tipo_producto": "Lacteos"
     },
     {
         "id": 20,
-        "producto": "Helado",
+        "producto_nombre": "Helado",
         "descripcion": "Helado de vainilla 500ml",
         "precio": 400,
-        "imagen_url": "https://example.com/images/helado.jpg",
+        "imagen_url": "./imagenes/helado.jpg",
         "tipo_producto": "Postres"
     },
     {
         "id": 21,
-        "producto": "Banana",
+        "producto_nombre": "Banana",
         "descripcion": "Bananas frescas",
         "precio": 120,
-        "imagen_url": "https://example.com/images/banana.jpg",
+        "imagen_url": "./imagenes/bananas.jpg",
         "tipo_producto": "Fruta"
     },
     {
         "id": 22,
-        "producto": "Naranja",
+        "producto_nombre": "Naranja",
         "descripcion": "Naranjas frescas",
         "precio": 110,
-        "imagen_url": "https://example.com/images/naranja.jpg",
+        "imagen_url": "./imagenes/naranja.jpg",
         "tipo_producto": "Fruta"
     },
     {
         "id": 23,
-        "producto": "Pera",
+        "producto_nombre": "Pera",
         "descripcion": "Peras frescas",
         "precio": 130,
-        "imagen_url": "https://example.com/images/pera.jpg",
+        "imagen_url": "./imagenes/pera.jpg",
         "tipo_producto": "Fruta"
     },
     {
         "id": 24,
-        "producto": "Frutilla",
+        "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 500g",
         "precio": 180,
-        "imagen_url": "https://example.com/images/frutilla.jpg",
+        "imagen_url": "./imagenes/frutilla.jpg",
         "tipo_producto": "Fruta"
     },
     {
         "id": 25,
-        "producto": "Sandía",
-        "descripcion": "Sandía fresca",
+        "producto_nombre": "Sandia",
+        "descripcion": "Sandia fresca",
         "precio": 250,
-        "imagen_url": "https://example.com/images/sandia.jpg",
+        "imagen_url": "./imagenes/sandia.jpg",
         "tipo_producto": "Fruta"
     }
-]
+];
