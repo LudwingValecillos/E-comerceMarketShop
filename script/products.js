@@ -153,22 +153,22 @@ buscadorProducto.addEventListener("input",(event) =>{
     } else {
         console.log(productosFiltrados);
     }
-
-    addCards(productosFiltrados)
 });
 
 
 
 
+// <article class="articulo w-52">
+//             <img src="../imagenes/manzana.png" class="imagenArticulo w-full h-40" alt="">
+//             <h2 class="tituloArticulo text-center font-bold text-2xl">Manzana</h2>
+//             <p class="descripcionArticulo text-center">Manzanas rojas frescas</p>
+//             <div class="flex justify-evenly">
+//                 <p class="precioArticulo font-bold text-center">0.50</p>
+//                 <p class="stockArticulo font-bold text-center">Disponible</p>
+//             </div>
 
+//                 <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Carrito</button>
 
-
-
-
-
-//------------CREANDO LOS FILTROS CRUZADOS--------------//
-
-
-
+//         </article>
 
 

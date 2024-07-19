@@ -174,7 +174,7 @@ const productos = [
     {
         "id": 20,
         "producto_nombre": "Helado",
-        "descripcion": "Helado de vainilla 500ml",
+        "descripcion": "Helado balde de 3 colores por kilo",
         "precio": 400,
         "imagen_url": "../imagenes/helado.jpg",
         "tipo_producto": "Postres",
