@@ -107,3 +107,5 @@ buscadorProducto.addEventListener("input",(event) =>{
 //                 <button id="boton" class="w-full p-2 bg-gray-400 text-white rounded-lg mt-3">Carrito</button>
 
 //         </article>
+
+
