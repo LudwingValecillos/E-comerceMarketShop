@@ -36,3 +36,6 @@ body{
       width: 33.333%; /* Ancho de tarjeta en pantallas grandes (desktops) */
     }
   }
+  .contenedor-total{
+    display: flex;
+    flex-direction: column;}
