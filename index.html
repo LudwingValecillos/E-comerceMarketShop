@@ -7,10 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="shortcut icon" href="./imagenes/icon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css/styles.css">
     <title>Market Shop</title>
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col">
+  
     <header class="bg-[#F7F7F7] flex justify-between h-40">
         <div class="flex gap-2 sm:gap-6 md:gap-10 w-1/2 items-center justify-center md:justify-start h-30">
             <img src="https://cdn.dribbble.com/users/46315/screenshots/2080616/open-uri20150527-11-j5oul2"
@@ -30,7 +32,7 @@
         </nav>
     </header>
 
-    <main class="h-screen">
+    <main class="h-50%">
         <div class="relative bg-gray-900 h-72">
             <img class="absolute inset-0 object-cover w-full h-full" src="./imagenes/banner.jpg"
                 alt="Imagen de fondo del banner" />
@@ -42,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="mx-auto max-w-7xl px-4 sm-24 mt-10">
+        <div class="mx-auto max-w-7xl w-full flex flex-col justify-center items-center py-20 px-4 sm-24 bg-[#ffffffa2]  ">
             <p class="leading-6 p-2 text-lg font-semibold font-sans">
                 Market es un supermercado con una sólida trayectoria y dedicado a
                 satisfacer las necesidades de toda la familia 👪. Con varios años en
@@ -97,11 +99,7 @@
         <p>&copy; 2024 Supermercado. Todos los derechos reservados.</p>
       </div>
       <div class="flex m-2 w-96 flex-wrap justify-evenly">
-        <img
-          src="./imagenes/favicon.gif"
-          class="w-full h-auto"
-          alt="logo movieStack"
-        />
+        <img src="./imagenes/favicon.gif" class="w-full h-auto" alt="logo movieStack" />
         <a href="https://www.facebook.com"><img src="./imagenes/logoFacebook.png" alt="" class="w-10 h-10" /></a>    
         <a href="https://www.instagram.com"><img src="./imagenes/logoInstagram.png" alt="" class="w-10 h-10" /></a>
         <a href="https://www.linkedin.com"><img src="./imagenes/logoLinkeDin.png" alt="" class="w-10 h-10" /></a>
