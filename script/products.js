@@ -38,7 +38,7 @@ let cardContainer = document.querySelector(".card-container");
 
 function createCards(arrayProductos) {
   let card = `
-    <article class="w-72 h-full border-black border-2 flex flex-col justify-between bg-red-200 rounded-lg p-5">
+    <article class="w-72 h-full shadow-xl flex flex-col justify-between bg-red-200 rounded-lg p-5">
       <img src="${arrayProductos.imagen_url}" class="imagenArticulo w-full h-40 objet-contain rounded-lg" alt="${arrayProductos.producto_nombre}">
       <h2 class="tituloArticulo text-center font-bold text-2xl">${arrayProductos.producto_nombre}</h2>
       <p class="descripcionArticulo text-center ">${arrayProductos.descripcion}</p>
