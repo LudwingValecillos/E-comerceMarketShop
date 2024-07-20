@@ -26,6 +26,24 @@ body{
 .carousel::-webkit-scrollbar {
   display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
 }
+
+.container-carrito{
+
+
+  height: 350px;
+  width: 600px;
+  border: 1px solid #000;
+  background: #f6f;
+  display: none;
+  margin: auto;
+  transition: all;
+  transition-duration: 2s;
+  transition-timing-function: 1s;
+}
+
+
+
+
 @media (min-width: 640px) {
   .carousel-item {
     width: 50%; /* Ancho de tarjeta en pantallas medianas (tablets) */
