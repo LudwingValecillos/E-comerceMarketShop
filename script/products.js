@@ -85,10 +85,25 @@ const aplicarFiltros = () => {
 select.addEventListener("change", aplicarFiltros);
 buscadorProducto.addEventListener("input", aplicarFiltros);
 
+
+const openModalButton = document.getElementById('openModalButton');
+let cantidadDeProductosTotal = []
+let cantidadDeProductosAgregados = 0
 // Código para manejar el clic en el contenedor de tarjetas
 cardContainer.addEventListener("click", (e) => {
   let esBotonLike = e.target.dataset.vote; 
   let idFruta = e.target.dataset.id; 
+  cantidadDeProductosAgregados++
+  cantidadDeProductosTotal.push(cantidadDeProductosAgregados);
+  let numeroContadorTotalDeIconoCarrito = document.createElement("div");
+  openModalButton.className = "relative";
+  numeroContadorTotalDeIconoCarrito.className = "absolute bottom-2 right-[2px] w-[15px] h-[15px] bg-red-500 z-10"
+  openModalButton.appendChild(numeroContadorTotalDeIconoCarrito);
+  let numeroDentroDelCarrito = `<p class="font-bold text-[12px] ">${cantidadDeProductosAgregados}</p>`
+  numeroContadorTotalDeIconoCarrito.innerHTML = numeroDentroDelCarrito;
+  
+  
+
 
   if(esBotonLike){
     if(carro.includes(idFruta)){
@@ -96,10 +111,15 @@ cardContainer.addEventListener("click", (e) => {
     } else {
       carro.push(idFruta);
     }
+  
   }
   
   console.log(carro);
+  console.log(cantidadDeProductosAgregados);
+  console.log(cantidadDeProductosTotal);
   localStorage.setItem("carrito", JSON.stringify(carro));
+
+
 });
 
 
@@ -107,7 +127,7 @@ cardContainer.addEventListener("click", (e) => {
 // Carrito de compras
 
 document.addEventListener('DOMContentLoaded', () => {
-  const openModalButton = document.getElementById('openModalButton');
+  // const openModalButton = document.getElementById('openModalButton');
   const closeModalButton = document.getElementById('closeModalButton');
   const cartModal = document.getElementById('cartModal');
   const cartItemsContainer = document.getElementById('cartItemsContainer');
