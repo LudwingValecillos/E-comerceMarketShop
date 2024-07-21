@@ -115,8 +115,8 @@ function crearTarjeta(producto) {
             <div class="flex justify-evenly">
                 <p class="precioArticulo font-bold text-center">${producto.precio} $</p>
                 <p class="stockArticulo font-bold text-center ${pocasUnidades ? 'text-red-500' : ''}">
-                    ${unidadesRestantes} unidades
-                    ${pocasUnidades ? '<span class="text-red-500 font-bold">Pocas unidades</span>' : ''}
+                    ${unidadesRestantes} Unidades
+                    ${pocasUnidades ? '<span class="text-red-500 font-bold">restantes</span>' : ''}
                 </p>
             </div>
             <button data-id="${producto.id}" class="agregar-carrito w-full p-2 ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white'} text-white rounded-lg mt-3">Agregar al carrito</button>
