@@ -11,7 +11,7 @@ const productos = [
     {
         "id": 2,
         "producto_nombre": "Pan",
-        "descripcion": "Pan casero por kg",
+        "descripcion": "Bolsas de pan casero por kg",
         "precio": 1500,
         "imagen_url": "../imagenes/pan.jpg",
         "tipo_producto": "Panadería",
@@ -38,7 +38,7 @@ const productos = [
     {
         "id": 5,
         "producto_nombre": "Pollo",
-        "descripcion": "Pollo por kilo",
+        "descripcion": "Pollo entero",
         "precio": 2800,
         "imagen_url": "../imagenes/pollo.jpg",
         "tipo_producto": "Carnes",
@@ -83,7 +83,7 @@ const productos = [
     {
         "id": 10,
         "producto_nombre": "Cereal",
-        "descripcion": "Cereal copos de maiz y arroz",
+        "descripcion": "Cereal copos de maiz y arroz crocante 350g",
         "precio": 2350,
         "imagen_url": "../imagenes/cereal.jpg",
         "tipo_producto": "Cereales",
@@ -92,7 +92,7 @@ const productos = [
     {
         "id": 11,
         "producto_nombre": "Tomate",
-        "descripcion": "Tomates frescos",
+        "descripcion": "Tomates frescos 1kg",
         "precio": 800,
         "imagen_url": "../imagenes/tomate.jpg",
         "tipo_producto": "Verdura",
@@ -101,7 +101,7 @@ const productos = [
     {
         "id": 12,
         "producto_nombre": "Pastas",
-        "descripcion": "Pastas Giacomo capelletini",
+        "descripcion": "Pastas Giacomo capelletini 1kg",
         "precio": 3900,
         "imagen_url": "../imagenes/pastas.jpg",
         "tipo_producto": "Cereales",
@@ -182,7 +182,7 @@ const productos = [
     {
         "id": 21,
         "producto_nombre": "Banana",
-        "descripcion": "Bananas frescas",
+        "descripcion": "Bananas frescas 1kg (se vende enbasada)",
         "precio": 2000,
         "imagen_url": "../imagenes/banana.jpg",
         "tipo_producto": "Fruta",
@@ -191,7 +191,7 @@ const productos = [
     {
         "id": 22,
         "producto_nombre": "Naranja",
-        "descripcion": "Naranjas frescas",
+        "descripcion": "Naranjas frescas 1/2kg (se vende enbasada)",
         "precio": 1700,
         "imagen_url": "../imagenes/naranja.jpg",
         "tipo_producto": "Fruta",
@@ -200,7 +200,7 @@ const productos = [
     {
         "id": 23,
         "producto_nombre": "Pera",
-        "descripcion": "Peras frescas",
+        "descripcion": "Peras frescas 1/2kg (se vende enbasada) ",
         "precio": 1800,
         "imagen_url": "../imagenes/pera.png",
 
@@ -212,7 +212,7 @@ const productos = [
     {
         "id": 24,
         "producto_nombre": "Frutilla",
-        "descripcion": "Frutillas frescas 500g",
+        "descripcion": "Frutillas frescas 300g (se vende enbasada)",
         "precio": 5100,
 
         "imagen_url": "../imagenes/frutillas.png",
@@ -224,7 +224,7 @@ const productos = [
     {
         "id": 25,
         "producto_nombre": "Sandia",
-        "descripcion": "Sandia fresca por kg",
+        "descripcion": "Sandia fresca ",
         "precio": 1050,
         "imagen_url": "../imagenes/sandia.jpg",
         "tipo_producto": "Fruta",

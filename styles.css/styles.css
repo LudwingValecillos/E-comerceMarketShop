@@ -4,6 +4,7 @@ body{
  background-size: cover;
  background-attachment: fixed;
  background-position: center;
+
 }
 
 
@@ -27,6 +28,12 @@ body{
 .carousel::-webkit-scrollbar {
   display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
 }
+
+
+
+
+
+
 @media (min-width: 640px) {
   .carousel-item {
     width: 50%; /* Ancho de tarjeta en pantallas medianas (tablets) */

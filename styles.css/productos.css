@@ -1,0 +1,13 @@
+#cartItemsContainer {
+    max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+}
+body{
+    background-image: url(../imagenes/supermercado.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+     
+   
+   }
