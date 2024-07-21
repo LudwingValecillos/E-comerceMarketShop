@@ -1,16 +1,4 @@
-let input = document.getElementById("inputSearch");
 
-input.addEventListener("keydown", (event) => {
-    if (event.key === 'Enter' || event.keyCode === 13) {
-
-        console.log(input.value);
-        window.localStorage.setItem("search", input.value);
-        window.location.href = "pages/products.html";
-
-    }
-})
-console.log(input);
-console.log("Hello World");
 
 //Carrousel de ofertas
 
@@ -40,3 +28,51 @@ const carousel = document.getElementById('carousel');
       carousel.scrollBy({ left: newCardWidth * newVisibleCards, behavior: 'smooth' });
     });
   });
+
+
+
+  // Carrito de compras
+
+document.addEventListener('DOMContentLoaded', () => {
+  const openModalButton = document.getElementById('openModalButton');
+  const closeModalButton = document.getElementById('closeModalButton');
+  const cartModal = document.getElementById('cartModal');
+  const cartItemsContainer = document.getElementById('cartItemsContainer');
+
+  // Abrir el modal
+  openModalButton.addEventListener('click', () => {
+    cartModal.classList.remove('hidden');
+    loadCartItems();
+  });
+
+  // Cerrar el modal
+  closeModalButton.addEventListener('click', () => {
+    cartModal.classList.add('hidden');
+  });
+
+  // Cargar productos del carrito desde localStorage
+  function loadCartItems() {
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenedor
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    if (cartItems.length === 0) {
+      cartItemsContainer.innerHTML = '<p class="text-center">El carrito está vacío.</p>';
+      return;
+    }
+
+    cartItems.forEach(item => {
+      const itemElement = document.createElement('div');
+      itemElement.className = 'flex justify-between items-center p-2 border-b';
+      itemElement.innerHTML = `
+        <div>
+          <p class="font-semibold">${item.name}</p>
+          <p class="text-gray-600">${item.description}</p>
+        </div>
+        <div>
+          <p class="font-semibold">$${item.price}</p>
+        </div>
+      `;
+      cartItemsContainer.appendChild(itemElement);
+    });
+  }
+});

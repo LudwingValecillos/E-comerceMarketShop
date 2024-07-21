@@ -614,7 +614,7 @@ function createOptions(productos) {
   });
 }
 
-createOptions(productos);
+crearOpciones(productos);
 
 let carro;
 
@@ -645,22 +645,17 @@ function createCards(arrayProductos) {
   return card;
 }
 
-function addCards(productos) {
-  cardContainer.innerHTML = "";
-  let respuesta = "";
-  productos.forEach((item) => {
-    respuesta += createCards(item);
-  });
-  cardContainer.innerHTML += respuesta;
+function agregarTarjetas(productos) {
+    contenedorTarjetas.innerHTML = productos.map(crearTarjeta).join('');
 }
 
-addCards(productos);
+agregarTarjetas(productos);
 
 let buscadorProducto = document.getElementById("input-buscador-nombre");
 
 const aplicarFiltros = () => {
-  const fruta = select.value;
-  const buscador = buscadorProducto.value.toLowerCase();
+    const tipoSeleccionado = selectProducto.value;
+    const busqueda = buscadorProducto.value.toLowerCase();
 
   const productosFiltrados = productos.filter((producto) => {
     const matchesGenre = fruta === "all" || producto.tipo_producto.includes(fruta);

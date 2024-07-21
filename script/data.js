@@ -203,6 +203,9 @@ const productos = [
         "descripcion": "Peras frescas 1/2kg (se vende enbasada) ",
         "precio": 1800,
         "imagen_url": "../imagenes/pera.png",
+
+        
+
         "tipo_producto": "Fruta",
         "stock": 13
     },
@@ -211,7 +214,10 @@ const productos = [
         "producto_nombre": "Frutilla",
         "descripcion": "Frutillas frescas 300g (se vende enbasada)",
         "precio": 5100,
+
         "imagen_url": "../imagenes/frutillas.png",
+
+    
         "tipo_producto": "Fruta",
         "stock": 14
     },
