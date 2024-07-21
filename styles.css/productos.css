@@ -1,0 +1,4 @@
+#cartItemsContainer {
+    max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+}

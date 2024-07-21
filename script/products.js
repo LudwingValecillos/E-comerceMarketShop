@@ -73,13 +73,14 @@ function cargarProductosCarrito() {
 // Crear el modal dinámicamente
 function crearModalCarrito() {
     const modalHTML = `
-        <div id="cartModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center overflow-scroll">
-            <div class="bg-white rounded-lg overflow-hidden w-11/12 md:w-1/2">
-                <div class="px-6 py-4 flex justify-between items-center border-b">
+        <div id="cartModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden overflow-scroll">
+            <div class="bg-white rounded-lg overflow-hidden w-11/12 md:w-1/2 ">
+
+                <div class="px-6 py-4 flex justify-between items-center border-b ">
                     <h3 class="text-lg font-bold">Carrito de Compras</h3>
                     <button id="cerrarModalButton" class="text-gray-600 hover:text-gray-900">&times;</button>
                 </div>
-                <div class="p-6 space-y-4" id="cartItemsContainer">
+                <div class="px-6" id="cartItemsContainer">
                     <!-- Los productos del carrito se mostrarán aquí -->
                 </div>
                 <div class="px-6 py-4 border-t flex justify-between items-center">
