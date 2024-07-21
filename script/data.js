@@ -83,7 +83,7 @@ const productos = [
     {
         "id": 10,
         "producto_nombre": "Cereal",
-        "descripcion": "Cereal copos de maiz y arroz crocante",
+        "descripcion": "Cereal copos de maiz y arroz",
         "precio": 2350,
         "imagen_url": "../imagenes/cereal.jpg",
         "tipo_producto": "Cereales",
