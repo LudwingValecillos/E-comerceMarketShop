@@ -152,8 +152,20 @@ const aplicarFiltros = () => {
 selectProducto.addEventListener("change", aplicarFiltros);
 buscadorProducto.addEventListener("input", aplicarFiltros);
 
+let agregarCantidadProductosEnCarrito = [];
+let contador = 0
+let carritoImagen = document.querySelector(".boton-carrito")
+console.log(carritoImagen);
+
+
 // Manejar el clic en el contenedor de tarjetas
 contenedorTarjetas.addEventListener("click", (e) => {
+
+    let contadorDeCarrito = document.createElement("p");
+        carritoImagen.appendChild(contadorDeCarrito);
+
+
+
     if (e.target.classList.contains('agregar-carrito')) {
         const id = e.target.dataset.id;
         const producto = productos.find(item => item.id == id);
