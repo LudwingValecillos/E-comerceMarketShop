@@ -40,7 +40,7 @@ const productos = [
         "producto_nombre": "Pollo",
         "descripcion": "Pollo entero",
         "precio": 2800,
-        "imagen_url": "../imagenes/pollo.jpg",
+        "imagen_url": "../imagenes/pollo.JPG",
         "tipo_producto": "Carnes",
         "stock": 3
     },
