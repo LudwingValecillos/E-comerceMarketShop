@@ -111,6 +111,7 @@ function crearTarjeta(producto) {
     const pocasUnidades = unidadesRestantes <= 5;
     return `
         <article class="w-72 h-full shadow-xl flex flex-col justify-between bg-red-200 rounded-lg p-5">
+        <a href="./detalles.html?id=${producto.id}">
             <img src="${producto.imagen_url}" class="imagenArticulo w-full h-40 object-contain rounded-lg" alt="${producto.producto_nombre}">
             <h2 class="tituloArticulo text-center font-bold text-2xl">${producto.producto_nombre}</h2>
             <p class="descripcionArticulo text-center ">${producto.descripcion}</p>
@@ -121,7 +122,10 @@ function crearTarjeta(producto) {
                     ${pocasUnidades ? '<span class="text-red-500 font-bold">restantes</span>' : ''}
                 </p>
             </div>
-            <button data-id="${producto.id}" class="agregar-carrito w-full p-2 ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white  '} text-white rounded-lg mt-3">Agregar al carrito</button>
+
+            </a>
+            <button data-id="${producto.id}" class="agregar-carrito w-full p-2 ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white'} text-white rounded-lg mt-3">Agregar al carrito</button>
+
         </article>`;
 }
 
@@ -154,13 +158,17 @@ const aplicarFiltros = () => {
 selectProducto.addEventListener("change", aplicarFiltros);
 buscadorProducto.addEventListener("input", aplicarFiltros);
 
+let agregarCantidadProductosEnCarrito = [];
+let contador = 0
+let carritoImagen = document.querySelector(".boton-carrito")
+console.log(contador);
 // Manejar el clic en el contenedor de tarjetas
 contenedorTarjetas.addEventListener("click", (e) => {
     if (e.target.classList.contains('agregar-carrito')) {
         const id = e.target.dataset.id;
         const producto = productos.find(item => item.id == id);
 
-        if (producto) {
+        if (producto) {            
             const itemEnCarrito = carrito.find(item => item.id == id);
             if (itemEnCarrito) {
                 if (itemEnCarrito.cantidad < producto.stock) {
@@ -205,4 +213,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});
+
