@@ -49,7 +49,7 @@ const productos = [
         "producto_nombre": "Jugo de Naranja",
         "descripcion": "Jugo de naranja natural 1L",
         "precio": 1690,
-        "imagen_url": "../imagenes/jugo.jpg",
+        "imagen_url": "../imagenes/jugo.JPG",
         "tipo_producto": "Bebidas",
         "stock": 6
     },
@@ -67,7 +67,7 @@ const productos = [
         "producto_nombre": "Queso",
         "descripcion": "Queso cremoso 250g",
         "precio": 3100,
-        "imagen_url": "../imagenes/queso.jpg",
+        "imagen_url": "../imagenes/queso.JPG",
         "tipo_producto": "Lácteos",
         "stock": 2
     },
@@ -85,7 +85,7 @@ const productos = [
         "producto_nombre": "Cereal",
         "descripcion": "Cereal copos de maiz y arroz crocante 350g",
         "precio": 2350,
-        "imagen_url": "../imagenes/cereal.jpg",
+        "imagen_url": "../imagenes/cereal.JPG",
         "tipo_producto": "Cereales",
         "stock": 4
     },
@@ -103,7 +103,7 @@ const productos = [
         "producto_nombre": "Pastas",
         "descripcion": "Pastas Giacomo capelletini 1kg",
         "precio": 3900,
-        "imagen_url": "../imagenes/pastas.jpg",
+        "imagen_url": "../imagenes/pastas.JPG",
         "tipo_producto": "Cereales",
         "stock": 10
     },
