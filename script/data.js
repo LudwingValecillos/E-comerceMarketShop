@@ -164,7 +164,7 @@ const productos = [
         "producto_nombre": "Sal",
         "descripcion": "Sal de mesa 500 gr",
         "precio": 1200,
-        "imagen_url": "../imagenes/sal.jpg",
+        "imagen_url": "../imagenes/sal.JPG",
         "tipo_producto": "Condimentos",
         "stock": 7,
         "detalles": "La sal de mesa es esencial para dar sabor a cualquier comida. Este producto de alta calidad se disuelve fácilmente y es ideal para cocinar y sazonar en la mesa."
