@@ -15,7 +15,7 @@ console.log(productoSeleccionadoParaDetalle);
 
 function crearDetalle(array){
     let detalles = `                <div class="md:w-1/2 p-4">
-                    <img class="w-full h-auto rounded-xl" src="${array.imagen_url}" alt="Banana">
+                    <img class="w-full h-auto rounded-xl" src="${array.imagen_url}" alt="${array.producto_nombre} title=${array.producto_nombre}">
                 </div>
                 <div class="md:w-1/2 p-4 flex flex-col justify-center">
                     <h2 class="text-4xl md:text-6xl text-white mb-2">${array.producto_nombre}</h2>
