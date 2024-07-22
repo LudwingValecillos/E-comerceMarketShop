@@ -148,7 +148,7 @@ const productos = [
         "producto_nombre": "Sal",
         "descripcion": "Sal de mesa 500 gr",
         "precio": 1200,
-        "imagen_url": "../imagenes/sal.jpg",
+        "imagen_url": "../imagenes/sal.JPG",
         "tipo_producto": "Condimentos",
         "stock": 7
     },
