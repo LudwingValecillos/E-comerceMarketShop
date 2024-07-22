@@ -1,4 +1,9 @@
-
+function formatearAPesos(precio) {
+    return new Intl.NumberFormat('es-AR', {
+        style: 'currency',
+        currency: 'ARS'
+    }).format(precio);
+}
 // Crear opciones del select
 let selectProducto = document.querySelector(".select-producto");
 
@@ -78,7 +83,7 @@ function cargarProductosCarrito() {
                     <p class="text-gray-600">Cantidad: ${item.cantidad}</p>
                 </div>
                 <div>
-                    <p class="font-semibold">$${producto.precio * item.cantidad}</p>
+                    <p class="font-semibold">${formatearAPesos(producto.precio * item.cantidad)}</p>
                     <button class="eliminar-item bg-red-500 text-white px-2 py-1 rounded" data-id="${producto.id}">Eliminar</button>
                 </div>
             `;
@@ -87,7 +92,7 @@ function cargarProductosCarrito() {
     });
 
     contenedorCarrito.appendChild(fragmento);
-    document.getElementById('cartTotal').innerText = `Total: $${calcularTotal()}`;
+    document.getElementById('cartTotal').innerText = `Total: ${formatearAPesos(calcularTotal())}`;
 }
 
 // Crear el modal dinámicamente
@@ -134,7 +139,7 @@ function crearTarjeta(producto) {
             <h2 class="tituloArticulo text-center font-bold text-2xl">${producto.producto_nombre}</h2>
             <p class="descripcionArticulo text-center ">${producto.descripcion}</p>
             <div class="flex justify-evenly">
-                <p class="precioArticulo font-bold text-center">${producto.precio}</p>
+                <p class="precioArticulo font-bold text-center">${formatearAPesos(producto.precio)}</p>
                 <p class="stockArticulo font-bold text-center ${pocasUnidades ? 'text-red-500' : ''}">
                     ${unidadesRestantes} Unidades
                     ${pocasUnidades ? '<span class="text-red-500 font-bold">restantes</span>' : ''}
