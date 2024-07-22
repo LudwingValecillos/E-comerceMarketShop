@@ -214,3 +214,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
   });
+
+
+
+
+let persona = {
+    nombre: "Francisco",
+    apellido: "Paez"
+}
+
+
+let persona2 = {
+    ...persona,
+    nombre: "Mauro"
+}
+
+
+console.log(persona2);
