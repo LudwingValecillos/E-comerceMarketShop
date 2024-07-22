@@ -15,11 +15,11 @@ console.log(productoSeleccionadoParaDetalle);
 
 function crearDetalle(array){
     let detalles = `                <div class="md:w-1/2 p-4">
-                    <img class="w-full h-auto rounded-xl" src="${array.imagen_url}" alt="Banana">
+                    <img class="w-full h-auto rounded-xl" src="${array.imagen_url}" alt="${array.producto_nombre} title=${array.producto_nombre}">
                 </div>
                 <div class="md:w-1/2 p-4 flex flex-col justify-center">
-                    <h2 class="text-4xl md:text-6xl text-white mb-2">${array.producto_nombre}</h2>
-                    <p class="text-xl md:text-3xl text-white mb-4">${array.descripcion}</p>
+                    <h2 class="text-4xl md:text-6xl text-white mb-2 border-b-4 text-center">${array.producto_nombre}</h2>
+                    <p class="text-xl md:text-3xl text-white mb-4">${array.detalles}</p>
                     <p class="text-2xl md:text-5xl font-bold text-white mb-4">$${array.precio}</p>
                     <div class="flex items-center gap-2">
                         <p class="text-xl text-white">Puntuación:</p>
