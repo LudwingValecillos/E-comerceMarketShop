@@ -134,7 +134,7 @@ function crearTarjeta(producto) {
             <h2 class="tituloArticulo text-center font-bold text-2xl">${producto.producto_nombre}</h2>
             <p class="descripcionArticulo text-center ">${producto.descripcion}</p>
             <div class="flex justify-evenly">
-                <p class="precioArticulo font-bold text-center">${producto.precio} $</p>
+                <p class="precioArticulo font-bold text-center">${producto.precio}</p>
                 <p class="stockArticulo font-bold text-center ${pocasUnidades ? 'text-red-500' : ''}">
                     ${unidadesRestantes} Unidades
                     ${pocasUnidades ? '<span class="text-red-500 font-bold">restantes</span>' : ''}
@@ -232,3 +232,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
   });
+
+
+
+
+let persona = {
+    nombre: "Francisco",
+    apellido: "Paez"
+}
+
+
+let persona2 = {
+    ...persona,
+    nombre: "Mauro"
+}
+
+
+console.log(persona2);
