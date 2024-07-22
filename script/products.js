@@ -150,7 +150,7 @@ function crearTarjeta(producto) {
 
             </a>
             <div class="flex justify-center items-center"> 
-            <button data-id="${producto.id}" class="agregar-carrito w-full p-2 transition-all duration-150 active:w-[85%] active:bg-[#991B1B]  ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white'} text-white rounded-lg mt-3">Agregar al carrito</button>
+            <button data-id="${producto.id}" class="agregar-carrito w-full p-2 transition-all duration-200 active:w-[85%] active:bg-[#991B1B]  ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white'} text-white rounded-lg mt-3">Agregar al carrito</button>
 </div>
         </article>`;
 }
