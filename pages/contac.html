@@ -28,36 +28,36 @@
         
 
         <main class="flex justify-center my-8 md:my-16">
-            <div class="contacto rounded-xl  bg-[#c0c0c08c] bg-opacity-70 shadow-2xl w-full md:w-[80%] lg:w-[60%] p-4 md:p-8 flex flex-col">
+            <div class="contacto rounded-xl bg-[#c0c0c08c] bg-opacity-70 shadow-2xl w-full md:w-[80%] lg:w-[60%] p-4 md:p-8 flex flex-col">
                 <h1 class="text-center text-3xl md:text-4xl mb-4">Contáctanos</h1>
                 <div class="bg-[#d86055b6] bg-opacity-70 flex flex-col justify-center items-center p-4">
                     <form action="" class="w-full md:w-[80%] lg:w-[60%] flex flex-col gap-4">
                         <fieldset class="fieldset rounded-md border-2 border-black p-4 gap-4">
                             <legend class="px-2 py-1 text-black text-lg md:text-xl font-bold">Datos Personales</legend>
                             <div>
-                                <label for="name" class="block">Nombre</label>
-                                <input class="w-full p-2" type="text" name="name" id="name" required>
+                                <label for="name" class="block font-bold">Nombre</label>
+                                <input class="w-full p-2" type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
                             </div>
                             <div>
-                                <label for="lastname" class="block">Apellido</label>
-                                <input class="w-full p-2" type="text" name="lastname" id="lastname" required>
+                                <label for="lastname" class="block font-bold">Apellido</label>
+                                <input class="w-full p-2" type="text" name="lastname" id="lastname" placeholder="Ingresa tu apellido" required>
                             </div>
                             <div>
-                                <label for="streetaddress" class="block">Direccion</label>
-                                <input class="w-full p-2" type="text" name="streetaddress" id="streetaddress" required>
+                                <label for="streetaddress" class="block font-bold">Dirección</label>
+                                <input class="w-full p-2" type="text" name="streetaddress" id="streetaddress" placeholder="Ingresa tu dirección" required>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full">
-                                    <label for="city" class="block">Ciudad</label>
-                                    <input class="w-full p-2" type="text" name="city" id="city" required>
+                                    <label for="city" class="block font-bold">Ciudad</label>
+                                    <input class="w-full p-2" type="text" name="city" id="city" placeholder="Ingresa tu ciudad" required>
                                 </div>
                                 <div class="w-full">
-                                    <label for="zipcode" class="block">Codigo postal</label>
-                                    <input class="w-full p-2" type="text" name="zipcode" id="zipcode" required>
+                                    <label for="zipcode" class="block font-bold">Código postal</label>
+                                    <input class="w-full p-2" type="text" name="zipcode" id="zipcode" placeholder="Ingresa tu código postal" required>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-2">
-                                <label>Genero</label>
+                            <div class="flex flex-col gap-2 font-bold">
+                                <label>Género</label>
                                 <div class="flex gap-4">
                                     <label for="male" class="flex items-center">
                                         <input type="radio" id="male" name="gender" value="male" required class="mr-2"> Hombre
@@ -68,6 +68,9 @@
                                     <label for="otro" class="flex items-center">
                                         <input type="radio" id="otro" name="gender" value="otro" required class="mr-2"> Otro
                                     </label>
+                                </div>
+                                <div>
+                                    <textarea name="" maxlength="280" required placeholder="Escribe un mensaje" class="w-full max-h-24 min-h-24 "></textarea>
                                 </div>
                             </div>
                         </fieldset>

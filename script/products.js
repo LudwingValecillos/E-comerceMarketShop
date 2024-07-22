@@ -4,8 +4,10 @@ let selectProducto = document.querySelector(".select-producto");
 
 function crearOpciones(productos) {
     let tiposProductos = [
-        ...new Set(productos.flatMap((producto) => producto.tipo_producto)),
-    ].sort();
+        ...new Set(productos.flatMap((producto) => producto.tipo_producto)),//flatMap itera sobre cada objeto en el array productos y extraer el valor de la propiedad tipo_producto
+        //Se crea un Set a partir del array resultante. Set es una colección de valores únicos, por lo que elimina cualquier duplicado.
+        //[...new Set()] Se convierte el Set de nuevo en un array utilizando  spread operator
+    ].sort();//Se ordena alfabéticamente el array de tipos de productos únicos.
 
     tiposProductos.forEach((tipo) => {
         let opcion = document.createElement("option");
@@ -18,20 +20,33 @@ function crearOpciones(productos) {
 crearOpciones(productos);
 
 // Manejo del carrito
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];// este   || se utiliza para proporcionar un valor por defecto en caso de que el valor a la izquierda sea falsy (en este caso, si es null o undefined)
+//JSON.parse(localStorage.getItem("carrito")   getItem devuelve un string json y JSON.parse lo convierte en un objeto o array javaScript
 
-// Función para guardar el carrito en localStorage
+
+// Función para guardar el contendio del carrito en el localStorage
 function guardarCarrito() {
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+    localStorage.setItem("carrito", JSON.stringify(carrito));//JSON.stringify convierte el array u objeto javaScript en un string JSON
 }
 
-// Función para calcular el total del carrito
+
+
+// Función para calcular el precio total de todos los items del carrito, tambien usa el método reduce() para sumar los precios de cada item multiplicado por su cantidad.
 function calcularTotal() {
-    return carrito.reduce((total, item) => {
-        const producto = productos.find(p => p.id === item.id);
-        return total + (producto ? producto.precio * item.cantidad : 0);
+    return carrito.reduce((total, item) => {//reduce ()  aplica una función a un acumulador y cada valor del array (de izquierda a derecha) para reducirlo a un solo valor.
+        //reduce() toma una función de callback (total, item) => {...} y un valor inicial 0.
+//total ===> es el acumulador que guarda la suma de los precios de los items .
+//item  ===> es el elemento actual del array carrito que se está procesando.
+
+        const producto = productos.find(p => p.id === item.id);// lo que hace find es  buscar un producto en el array productos cuyo id coincida con el id del item en el carrito.
+        return total + (producto ? producto.precio * item.cantidad : 0); //Esta expresión agrega al acumulador total el precio del item multiplicado por su cantidad.
+
+        //Si producto no es undefined (es decir, se encontró el producto correspondiente), multiplica el precio del producto (producto.precio) por la cantidad de ese item en el carrito (item.cantidad).
+        //Si producto es undefined, agrega 0 al total (para manejar casos en los que el producto ya no exista en el array productos).
     }, 0);
 }
+
+
 
 // Función para cargar los productos del carrito en el modal
 function cargarProductosCarrito() {
@@ -39,15 +54,20 @@ function cargarProductosCarrito() {
     contenedorCarrito.innerHTML = '';
 
     if (carrito.length === 0) {
+        // Si el carrito está vacío, mostrar un mensaje indicando que el carrito está vacío.
         contenedorCarrito.innerHTML = '<p class="text-center">El carrito está vacío.</p>';
+
+        //Actualizar el total del carrito a $0.
         document.getElementById('cartTotal').innerText = 'Total: $0';
         return;
     }
 
     const fragmento = document.createDocumentFragment();
-
+//Iterar sobre cada elemento del carrito
     carrito.forEach(item => {
-        const producto = productos.find(p => p.id === item.id);
+        const producto = productos.find(p => p.id === item.id); // Encontrar el producto correspondiente en la lista de productos usando el ID.
+
+        //Si se encuentra el producto, crear un elemento HTML para mostrarlo.
         if (producto) {
             const elementoItem = document.createElement('div');
             elementoItem.className = 'flex justify-between items-center p-2 border-b';
