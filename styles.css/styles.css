@@ -29,8 +29,34 @@ body{
   display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
 }
 
+#ofertas{
 
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+    width: 30%;
+    background-color: #FED30B;
+    animation-name: llenar-barra;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    margin: auto;
+    
+}
 
+@keyframes llenar-barra{
+  from{
+      width: 50%;
+      /* background-color: rgb(146, 120, 212); */
+  }
+  to{
+      width: 100%;
+
+  }
+}
 
 
 
