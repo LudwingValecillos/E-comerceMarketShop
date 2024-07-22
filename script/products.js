@@ -79,7 +79,7 @@ function cargarProductosCarrito() {
                 </div>
                 <div>
                     <p class="font-semibold">$${producto.precio * item.cantidad}</p>
-                    <button class="eliminar-item bg-red-500 text-white px-2 py-1 rounded" data-id="${producto.id}">Eliminar</button>
+                    <button class="eliminar-item  bg-red-500 text-white px-2 py-1 rounded" data-id="${producto.id}">Eliminar</button>
                 </div>
             `;
             fragmento.appendChild(elementoItem);
@@ -128,7 +128,7 @@ function crearTarjeta(producto) {
     const unidadesRestantes = producto.stock - (carrito.find(item => item.id === producto.id)?.cantidad || 0);
     const pocasUnidades = unidadesRestantes <= 5;
     return `
-        <article class="w-72 h-full shadow-xl flex flex-col justify-between bg-red-200 rounded-lg p-5">
+        <article class="w-72 h-full shadow-xl flex flex-col justify-between bg-red-200 rounded-lg p-5 ">
         <a href="./detalles.html?id=${producto.id}">
             <img src="${producto.imagen_url}" class="imagenArticulo w-full h-40 object-contain rounded-lg" alt="${producto.producto_nombre}">
             <h2 class="tituloArticulo text-center font-bold text-2xl">${producto.producto_nombre}</h2>
@@ -142,8 +142,9 @@ function crearTarjeta(producto) {
             </div>
 
             </a>
-            <button data-id="${producto.id}" class="agregar-carrito w-full p-2 ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white'} text-white rounded-lg mt-3">Agregar al carrito</button>
-
+            <div class="flex justify-center items-center"> 
+            <button data-id="${producto.id}" class="agregar-carrito w-full p-2 transition-all duration-150 active:w-[85%] active:bg-[#991B1B]  ${carrito.find(item => item.id === producto.id) ? 'bg-red-800 text-white' : 'bg-gray-400 text-white'} text-white rounded-lg mt-3">Agregar al carrito</button>
+</div>
         </article>`;
 }
 
